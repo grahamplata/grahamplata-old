@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container, Card, Image, Grid, Icon } from 'semantic-ui-react'
-import Layout from '../components/layout'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { Container, Card, Image, Grid, Icon, Item } from "semantic-ui-react";
+import Layout from "../components/layout";
+import { Link, StaticQuery, graphql } from "gatsby";
 
 const BlogPage = ({ children, props }) => (
   <StaticQuery
@@ -13,7 +13,7 @@ const BlogPage = ({ children, props }) => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 100)
+              excerpt(pruneLength: 300)
               id
               frontmatter {
                 title
@@ -35,42 +35,36 @@ const BlogPage = ({ children, props }) => (
     render={data => (
       <Layout>
         <Container>
-          <Grid stackable columns={3}>
+          <Item.Group>
             {data.allMarkdownRemark.edges.map(post => (
-              <Grid.Column key={post.node.id}>
-                <Card fluid key={post.node.id}>
-                  <Image
-                    fluid
-                    src={
-                      post.node.frontmatter.featuredImage.childImageSharp.sizes
-                        .src
-                    }
-                  />
-                  <Card.Content>
-                    <Card.Header>
-                      <Link to={post.node.frontmatter.path}>
-                        {post.node.frontmatter.title}
-                      </Link>
-                    </Card.Header>
-                    <Card.Meta>
-                      <span className="date">{post.node.frontmatter.date}</span>
-                    </Card.Meta>
-                    <Card.Description>{post.node.excerpt}</Card.Description>
-                  </Card.Content>
-                  <Card.Content extra>
-                    <a href="https://twitter.com/grahamplata">
-                      <Icon name="user" />
-                      @grahamplata
-                    </a>
-                  </Card.Content>
-                </Card>
-              </Grid.Column>
+              <Item key={post.node.id}>
+                <Item.Image
+                  as={Link}
+                  to={post.node.frontmatter.path}
+                  target="_blank"
+                  size="medium"
+                  src={
+                    post.node.frontmatter.featuredImage.childImageSharp.sizes
+                      .src
+                  }
+                />
+                <Item.Content>
+                  <Link to={post.node.frontmatter.path}>
+                    <Item.Header as="h2">
+                      {post.node.frontmatter.title}
+                    </Item.Header>
+                  </Link>
+                  <Item.Meta>{post.node.frontmatter.date}</Item.Meta>
+                  <Item.Description>{post.node.excerpt}</Item.Description>
+                  <Item.Extra>@grahamplata</Item.Extra>
+                </Item.Content>
+              </Item>
             ))}
-          </Grid>
+          </Item.Group>
         </Container>
       </Layout>
     )}
   />
-)
+);
 
-export default BlogPage
+export default BlogPage;
