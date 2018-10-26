@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Image, Grid, Icon, Item } from "semantic-ui-react";
+import { Container, Item } from "semantic-ui-react";
 import Layout from "../components/layout";
 import { Link, StaticQuery, graphql } from "gatsby";
 
