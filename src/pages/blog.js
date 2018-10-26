@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Item } from "semantic-ui-react";
+import { Container, Header, Item } from "semantic-ui-react";
 import Layout from "../components/layout";
 import { Link, StaticQuery, graphql } from "gatsby";
 
@@ -34,6 +34,9 @@ const BlogPage = ({ children, props }) => (
     `}
     render={data => (
       <Layout>
+        <Header as="h2" textAlign="left">
+          <Header.Content>Blog</Header.Content>
+        </Header>
         <Container>
           <Item.Group>
             {data.allMarkdownRemark.edges.map(post => (
