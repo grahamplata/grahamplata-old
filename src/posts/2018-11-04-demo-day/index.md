@@ -2,11 +2,20 @@
 path: '/demoday'
 title: 'Bike Demo Courtesy of Twisted Cog'
 date: '2018-11-04'
-featuredImage: "./INSERTPICTURE.png"
+featuredImage: "./IMG_9884.JPG"
 ---
 # An enjoyable Sunday afternoon testing out dream bikes
 
 > A photo of what Sabrina and Graham both rode.
+
+![](IMG_0111.JPG)
+![](IMG_2659.JPG)
+![](IMG_2704.JPG)
+![](IMG_3389.JPG)
+![](IMG_7799.JPG)
+![](IMG_9473.JPG)
+![](IMG_9884.JPG)
+![](IMG_0111.JPG)
 
 * _Weather specs_  - Sunny, clear, 50 degrees Fahrenheit.
 * _Trail specs_  - Lock 60 --> Schuylkill Canal Towpath --> PRT to Oaks --> Oaks to Collegeville --> and back!
