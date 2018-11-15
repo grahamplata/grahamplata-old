@@ -5,19 +5,19 @@
   "author": "Graham Plata <graham.plata@gmail.com>",
   "dependencies": {
     "exif-js": "^2.3.0",
-    "gatsby": "^2.0.32",
-    "gatsby-cli": "^2.4.4",
-    "gatsby-codemods": "^1.0.6",
-    "gatsby-image": "^2.0.18",
-    "gatsby-plugin-google-analytics": "^2.0.0-rc.2",
-    "gatsby-plugin-react-helmet": "^3.0.0-rc.1",
-    "gatsby-plugin-sharp": "^2.0.10",
-    "gatsby-remark-images": "^2.0.5",
-    "gatsby-source-filesystem": "^2.0.1-rc.6",
-    "gatsby-transformer-remark": "^2.1.10",
-    "gatsby-transformer-sharp": "^2.1.6",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "gatsby": "^2.0.50",
+    "gatsby-cli": "^2.4.5",
+    "gatsby-codemods": "^1.0.7",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-google-analytics": "^2.0.7",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.12",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-remark": "^2.1.12",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-emojione": "^5.0.0",
     "react-helmet": "^5.2.0",
     "react-player": "^1.6.6",
@@ -39,6 +39,6 @@
     "start": "serve public/"
   },
   "devDependencies": {
-    "prettier": "^1.14.3"
+    "prettier": "^1.15.2"
   }
 }
