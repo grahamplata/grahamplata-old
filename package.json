@@ -36,7 +36,8 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve public/"
+    "start": "serve public/",
+    "docker": "docker build --rm -f Dockerfile -t grahamplata/gatsby ."
   },
   "devDependencies": {
     "prettier": "^1.15.2"
