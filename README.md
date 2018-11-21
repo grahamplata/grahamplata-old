@@ -12,8 +12,11 @@ Default Commands:
 `gatsby build` Builds static files
 
 Build Docker Image:
+
 `gatsby build`
+
 `docker build --rm -f Dockerfile -t grahamplata:latest .`
+
 `docker run --rm -d -p 80:80 grahamplata:latest`
 
 https://reactjs.org/
