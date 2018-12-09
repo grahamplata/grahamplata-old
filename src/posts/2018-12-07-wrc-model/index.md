@@ -49,6 +49,8 @@ Nam blandit ante quam, vel ultrices nulla facilisis ac. Ut sit amet ligula elit.
 
 #### Initial Body Assembly and Light Primer
 
-![Primer](IMG_0872.JPG)
+![Primer](IMG_0872.jpg)
+![Primer](IMG_8907.JPG)
+![Primer](IMG_6961.JPG)
 
 > First coat of primer and minor body and wing assembly
