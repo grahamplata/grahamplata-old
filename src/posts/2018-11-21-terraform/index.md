@@ -7,6 +7,9 @@ featuredImage: "./terraform.png"
 
 In this post, I am exploring Terraform. It is a way to define infrastructure with code and will enable you to build and track changes to hardware. Below I document my process of getting started with the tool.
 
+- A [Github](https://github.com/grahamplata/terraform) repo of my exercises with terraform
+- Terraform Documentation [Linode Module](https://www.terraform.io/docs/providers/linode/)
+
 ## Getting started with Terraform
 
 Download [Terraform](https://www.terraform.io/downloads.html) You can download a version of Terraform from the releases service.
@@ -68,6 +71,79 @@ All other commands:
     state              Advanced state management
 ```
 
-## Setting up the main.tf
+## Building a Configuration
 
-Integer placerat congue metus in semper. Mauris ipsum eros, dapibus sit amet consectetur quis, pulvinar ac ipsum. Morbi nec erat lacinia, volutpat mi mollis, tincidunt nulla. Vivamus in varius augue. Vestibulum pharetra eros quis justo ultricies facilisis. Curabitur bibendum, sapien sit amet gravida sodales, risus nunc porttitor purus, id vestibulum ex risus ut ante. Praesent eleifend eget massa quis scelerisque.
+The current configuration stands up a Linode Nanode on us-east and adds local keys for access.
+
+### Setting up main.tf
+
+Below we are de
+
+```JSON
+provider "linode" {
+  token = "${var.linode_token}"
+}
+
+provider "external" {
+  version = "1.0.0"
+}
+```
+
+### Setting up variables.tf
+
+```JSON
+variable "linode_token" {
+  type        = "string"
+  description = "Linode API Personal Access Token"
+}
+
+variable "region" {
+  default     = "us-east"
+  description = "Values: us-east"
+}
+
+variable "server_type_node" {
+  default = "g6-nanode-1"
+}
+
+resource "random_string" "password" {
+  length           = 16
+  special          = true
+  override_special = "/@\" "
+}
+```
+
+### Setting up web.tf
+
+```JSON
+resource "linode_sshkey" "web" {
+  label   = "key"
+  ssh_key = "${chomp(file("~/.ssh/id_rsa.pub"))}"
+}
+
+resource "linode_instance" "terraform-web" {
+  label           = "Terraform-Web"
+  group           = "Terraform"
+  tags            = ["Terraform"]
+  image           = "linode/ubuntu18.04"
+  region          = "${var.region}"
+  type            = "${var.server_type_node}"
+  authorized_keys = ["${linode_sshkey.web.ssh_key}"]
+  root_pass       = "${random_string.password.result}"
+  private_ip      = true
+}
+```
+
+### Check your new deployment configuration for errors
+
+> The command below will begin by prompting you for the necessary variables we defined prior. If you have any errors in your configuration they will be called out here.
+
+```bash
+terraform plan
+```
+
+### Apply the configuration:
+
+```bash
+terraform apply
+```
