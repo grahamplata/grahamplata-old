@@ -1,11 +1,11 @@
 ---
 path: "/terraform"
-title: "Terraform and terraform accessories"
+title: "Terraform and Terraform accessories"
 date: "2018-11-21"
 featuredImage: "./terraform.png"
 ---
 
-![Alt Text, image of the nature](terraform.png)
+In this post, I am exploring Terraform. It is a way to define infrastructure with code and will enable you to build and track changes to hardware. Below I document my process of getting started with the tool.
 
 ## Getting started with Terraform
 
@@ -21,15 +21,15 @@ Download [Terraform](https://www.terraform.io/downloads.html) You can download a
 
 ### Installing terraform on macOS
 
-> ```bash
-> brew install terraform
-> ```
+```bash
+brew install terraform
+```
 
 Verify the install with
 
-> ```bash
-> terraform
-> ```
+```bash
+terraform
+```
 
 ```bash
 Usage: terraform [--version] [--help] <command> [args]
