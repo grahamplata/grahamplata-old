@@ -51,19 +51,15 @@ const About = props => (
             <List.Item>
               <List.Icon name="circle notched" />
               <List.Content>
-                <List.Header>Redux</List.Header>
-                <List.Description>
-                  Redux will allow predictable state in my web apps.
-                </List.Description>
+                <List.Header>Group Riding</List.Header>
+                <List.Description>Long distance Cycling Rides</List.Description>
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name="circle notched" />
               <List.Content>
-                <List.Header>Python</List.Header>
-                <List.Description>
-                  I guess to... "Automate the boring stuff..."
-                </List.Description>
+                <List.Header>Go</List.Header>
+                <List.Description>fmt.Println("Hello, Go")</List.Description>
               </List.Content>
             </List.Item>
             <List.Item>
@@ -79,7 +75,7 @@ const About = props => (
             <List.Item>
               <List.Icon name="circle notched" />
               <List.Content>
-                <List.Header>Driving</List.Header>
+                <List.Header>Spirited Driving</List.Header>
                 <List.Description>
                   I want to strengthen my driving abilities by learning to do
                   Drift or Autocross.
