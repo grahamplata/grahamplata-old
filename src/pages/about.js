@@ -1,20 +1,20 @@
-import React from 'react'
-import { Image, Grid, List } from 'semantic-ui-react'
-import { emojify } from 'react-emojione'
-import Layout from '../components/layout'
-import profile from '../images/me.png'
+import React from "react";
+import { Image, Grid, List } from "semantic-ui-react";
+import { emojify } from "react-emojione";
+import Layout from "../components/layout";
+import profile from "../images/me.png";
 
 const styles = {
   syapse: {
-    color: '#21C2D2',
+    color: "#21C2D2",
     fontWeight: 700,
-    textTransform: 'uppercase',
+    textTransform: "uppercase"
   },
   spacing: {
-    paddingTop: '3em',
-    paddingBottom: '3em',
-  },
-}
+    paddingTop: "3em",
+    paddingBottom: "3em"
+  }
+};
 
 const About = props => (
   <Layout location={props.location}>
@@ -25,50 +25,41 @@ const About = props => (
           <Image fluid target="_blank" src={profile} />
           <h3>What are you known for?</h3>
           <p>
-            I am a serial skill collector based in Philadelphia Pennsylvania.
-            Currently, I work at Syapse as a support engineer. In a past life, I
-            worked alongside the talented filmmakers at Gabello Studios and
-            Shufflebox Productions.
+            Graham's accumulation of talents was cultivated through curiosity,
+            physical experience, and pure gut instinct. These factors create
+            results that are often non-representational of a normal
+            problem-solving method. Graham loves keeping his hands busy with as
+            many different mediums as possible... often too many. Ranging from
+            photography to programming and even distilling honey wine.
+            Throughout his professional career, Graham has intermixed many
+            disciplines of his past to inform and influence his future
+            endeavors.
           </p>
         </Grid.Column>
         <Grid.Column>
           <h2>Learn more about me</h2>
-          <h3>What are you commonly known for?</h3>
-          <p>
-            I am commonly known for my technological prowess and keen eye for
-            design.
-          </p>
           <h3>Where are you currently?</h3>
           <p>
-            Right now I work as a Support Engineer for{' '}
+            Currently, I reside in Phoenixville, Pennsylvania working as a Data
+            Support Engineer for{" "}
             <a style={styles.syapse} href="https://www.syapse.com/">
               Syapse
             </a>
-            ~ provides a precision medicine data platform enabling healthcare
-            providers to use molecular profiling to diagnose and treat patients.
           </p>
-          <h3>What skills would you like to learn in 2018?</h3>
+          <h3>What skills would you like to learn in 2019?</h3>
           <List>
             <List.Item>
               <List.Icon name="circle notched" />
               <List.Content>
-                <List.Header>
-                  <a href="https://redux.js.org/">Redux</a>
-                </List.Header>
-                <List.Description>
-                  Redux will allow predictable state in my web apps.
-                </List.Description>
+                <List.Header>Group Riding</List.Header>
+                <List.Description>Long distance Cycling Rides</List.Description>
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name="circle notched" />
               <List.Content>
-                <List.Header>
-                  <a href="https://www.python.org/">Python</a>
-                </List.Header>
-                <List.Description>
-                  I guess to... "Automate the boring stuff..."
-                </List.Description>
+                <List.Header>Go</List.Header>
+                <List.Description>fmt.Println("Hello, Go")</List.Description>
               </List.Content>
             </List.Item>
             <List.Item>
@@ -84,7 +75,7 @@ const About = props => (
             <List.Item>
               <List.Icon name="circle notched" />
               <List.Content>
-                <List.Header>Driving</List.Header>
+                <List.Header>Spirited Driving</List.Header>
                 <List.Description>
                   I want to strengthen my driving abilities by learning to do
                   Drift or Autocross.
@@ -95,7 +86,7 @@ const About = props => (
           <h3>Where would you like to travel?</h3>
           <List>
             <List.Item>
-              <List.Icon>{emojify('🏔️')}</List.Icon>
+              <List.Icon>{emojify("🏔️")}</List.Icon>
               <List.Content>
                 <List.Header>ICELAND</List.Header>
                 <List.Description>
@@ -105,7 +96,7 @@ const About = props => (
               </List.Content>
             </List.Item>
             <List.Item>
-              <List.Icon>{emojify('🗺️')}</List.Icon>
+              <List.Icon>{emojify("🗺️")}</List.Icon>
               <List.Content>
                 <List.Header>New Zealand</List.Header>
                 <List.Description>
@@ -115,18 +106,11 @@ const About = props => (
                 </List.Description>
               </List.Content>
             </List.Item>
-            <List.Item>
-              <List.Icon>{emojify('🌁')}</List.Icon>
-              <List.Content>
-                <List.Header>San Francisco</List.Header>
-                <List.Description>I have heard good things.</List.Description>
-              </List.Content>
-            </List.Item>
           </List>
         </Grid.Column>
       </Grid>
     </div>
   </Layout>
-)
+);
 
-export default About
+export default About;
