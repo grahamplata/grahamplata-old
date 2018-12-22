@@ -8,6 +8,7 @@ Built With:
 * [Semantic UI](https://react.semantic-ui.com) Responsive layouts using human-friendly HTML.
 
 Default Commands:
+
 `gatsby develop` local development
 
 `gatsby build` Builds static files
