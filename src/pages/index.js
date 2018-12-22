@@ -1,24 +1,11 @@
-import React, { Fragment } from "react";
-import { Grid, Header } from "semantic-ui-react";
-import Link from "gatsby-link";
+import React from "react";
+import { Grid, Image } from "semantic-ui-react";
 import Layout from "../components/layout";
-
-const styles = {
-  wrapper: {
-    marginTop: 100
-  },
-  graham: {
-    fontSize: 30,
-    color: "#00b5ad",
-    fontWeight: "bold"
-  }
-};
+import profile from "../images/cl.jpg";
 
 const IndexPage = props => (
-  <Layout>
-    <Grid style={styles.wrapper} stackable columns={2}>
-      <Grid.Row />
-    </Grid>
+  <Layout location={props.location}>
+    <Image fluid target="_blank" src={profile} />
   </Layout>
 );
 

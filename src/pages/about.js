@@ -18,98 +18,95 @@ const styles = {
 
 const About = props => (
   <Layout location={props.location}>
-    <div style={styles.spacing}>
-      <Grid stackable columns={2}>
-        <Grid.Column>
-          <h2>Hi, I'm Graham!</h2>
-          <Image fluid target="_blank" src={profile} />
-          <h3>What are you known for?</h3>
-          <p>
-            Graham's accumulation of talents was cultivated through curiosity,
-            physical experience, and pure gut instinct. These factors create
-            results that are often non-representational of a normal
-            problem-solving method. Graham loves keeping his hands busy with as
-            many different mediums as possible... often too many. Ranging from
-            photography to programming and even distilling honey wine.
-            Throughout his professional career, Graham has intermixed many
-            disciplines of his past to inform and influence his future
-            endeavors.
-          </p>
-        </Grid.Column>
-        <Grid.Column>
-          <h2>Learn more about me</h2>
-          <h3>Where are you currently?</h3>
-          <p>
-            Currently, I reside in Phoenixville, Pennsylvania working as a Data
-            Support Engineer for{" "}
-            <a style={styles.syapse} href="https://www.syapse.com/">
-              Syapse
-            </a>
-          </p>
-          <h3>What skills would you like to learn in 2019?</h3>
-          <List>
-            <List.Item>
-              <List.Icon name="circle notched" />
-              <List.Content>
-                <List.Header>Group Riding</List.Header>
-                <List.Description>Long distance Cycling Rides</List.Description>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon name="circle notched" />
-              <List.Content>
-                <List.Header>Go</List.Header>
-                <List.Description>fmt.Println("Hello, Go")</List.Description>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon name="circle notched" />
-              <List.Content>
-                <List.Header>Welding</List.Header>
-                <List.Description>
-                  I want to restore and work on cars eventually. I feel this is
-                  a necessary skill for that.
-                </List.Description>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon name="circle notched" />
-              <List.Content>
-                <List.Header>Spirited Driving</List.Header>
-                <List.Description>
-                  I want to strengthen my driving abilities by learning to do
-                  Drift or Autocross.
-                </List.Description>
-              </List.Content>
-            </List.Item>
-          </List>
-          <h3>Where would you like to travel?</h3>
-          <List>
-            <List.Item>
-              <List.Icon>{emojify("🏔️")}</List.Icon>
-              <List.Content>
-                <List.Header>ICELAND</List.Header>
-                <List.Description>
-                  Iceland is the most unique and exciting place on the planet.
-                  You go to Iceland to have adventures and see natural beauty.
-                </List.Description>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon>{emojify("🗺️")}</List.Icon>
-              <List.Content>
-                <List.Header>New Zealand</List.Header>
-                <List.Description>
-                  Much like Iceland New Zealand has an amazing range of
-                  breathtaking scenery but from subtropical forests to
-                  snow-covered mountains.
-                </List.Description>
-              </List.Content>
-            </List.Item>
-          </List>
-        </Grid.Column>
-      </Grid>
-    </div>
+    <Grid stackable columns={2}>
+      <Grid.Column>
+        <h2>Hi, I'm Graham!</h2>
+        <Image fluid target="_blank" src={profile} />
+        <h3>What are you known for?</h3>
+        <p>
+          Graham's accumulation of talents was cultivated through curiosity,
+          physical experience, and pure gut instinct. These factors create
+          results that are often non-representational of a normal
+          problem-solving method. Graham loves keeping his hands busy with as
+          many different mediums as possible... often too many. Ranging from
+          photography to programming and even distilling honey wine. Throughout
+          his professional career, Graham has intermixed many disciplines of his
+          past to inform and influence his future endeavors.
+        </p>
+      </Grid.Column>
+      <Grid.Column>
+        <h2>Learn more about me</h2>
+        <h3>Where are you currently?</h3>
+        <p>
+          Currently, I reside in Phoenixville, Pennsylvania working as a Data
+          Support Engineer for{" "}
+          <a style={styles.syapse} href="https://www.syapse.com/">
+            Syapse
+          </a>
+        </p>
+        <h3>What skills would you like to learn in 2019?</h3>
+        <List>
+          <List.Item>
+            <List.Icon name="circle notched" />
+            <List.Content>
+              <List.Header>Group Riding</List.Header>
+              <List.Description>Long distance Cycling Rides</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name="circle notched" />
+            <List.Content>
+              <List.Header>Go</List.Header>
+              <List.Description>fmt.Println("Hello, Go")</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name="circle notched" />
+            <List.Content>
+              <List.Header>Welding</List.Header>
+              <List.Description>
+                I want to restore and work on cars eventually. I feel this is a
+                necessary skill for that.
+              </List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name="circle notched" />
+            <List.Content>
+              <List.Header>Spirited Driving</List.Header>
+              <List.Description>
+                I want to strengthen my driving abilities by learning to do
+                Drift or Autocross.
+              </List.Description>
+            </List.Content>
+          </List.Item>
+        </List>
+        <h3>Where would you like to travel?</h3>
+        <List>
+          <List.Item>
+            <List.Icon>{emojify("🏔️")}</List.Icon>
+            <List.Content>
+              <List.Header>ICELAND</List.Header>
+              <List.Description>
+                Iceland is the most unique and exciting place on the planet. You
+                go to Iceland to have adventures and see natural beauty.
+              </List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon>{emojify("🗺️")}</List.Icon>
+            <List.Content>
+              <List.Header>New Zealand</List.Header>
+              <List.Description>
+                Much like Iceland New Zealand has an amazing range of
+                breathtaking scenery but from subtropical forests to
+                snow-covered mountains.
+              </List.Description>
+            </List.Content>
+          </List.Item>
+        </List>
+      </Grid.Column>
+    </Grid>
   </Layout>
 );
 
