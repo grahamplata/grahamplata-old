@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Image } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 import Layout from "../components/layout";
 import profile from "../images/cl.jpg";
 

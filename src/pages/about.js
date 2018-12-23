@@ -104,6 +104,17 @@ const About = props => (
               </List.Description>
             </List.Content>
           </List.Item>
+          <List.Item>
+            <List.Icon>{emojify("🏎️")}</List.Icon>
+            <List.Content>
+              <List.Header>Pikes Peak International Hill Climb</List.Header>
+              <List.Description>
+                The Pikes Peak International Hill Climb, also known as The Race
+                to the Clouds, is an annual automobile and motorcycle hillclimb
+                to the summit of Pikes Peak in Colorado, USA.
+              </List.Description>
+            </List.Content>
+          </List.Item>
         </List>
       </Grid.Column>
     </Grid>

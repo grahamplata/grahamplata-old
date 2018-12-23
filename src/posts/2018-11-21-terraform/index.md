@@ -5,7 +5,7 @@ date: "2018-11-21"
 featuredImage: "./terraform.png"
 ---
 
-In this post, I am exploring Terraform. It is a way to define infrastructure with code and will enable you to build and track changes to hardware. Below I document my process of getting started with the tool.
+In this post, I am exploring Terraform. It is a way to define infrastructure with code and will enable you to build and track changes to hardware. Below I document my process of getting started with the tool by setting up a Nanode.
 
 - A [Github](https://github.com/grahamplata/terraform) repo of my exercises with terraform
 - Terraform Documentation [Linode Module](https://www.terraform.io/docs/providers/linode/)
