@@ -1,30 +1,27 @@
 import React from "react";
 import Layout from "../components/layout";
-import { graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const IndexPage = (props, { data }) => (
-  <Layout location={props.location}>
-    <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-  </Layout>
-);
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
+const IndexPage = props => (
+  <StaticQuery
+    query={graphql`
+      {
+        imageOne: file(relativePath: { eq: "cl.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
-    }
-  }
-`;
-
-export const pageQuery = graphql`
-  query {
-    imageOne: file(relativePath: { eq: "cl.jpg" }) {
-      ...fluidImage
-    }
-  }
-`;
+    `}
+    render={data => (
+      <Layout location={props.location}>
+        <Img fluid={data.imageOne.childImageSharp.fluid} />
+      </Layout>
+    )}
+  />
+);
 
 export default IndexPage;
