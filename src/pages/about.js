@@ -1,8 +1,8 @@
 import React from "react";
-import { Image, Grid, List } from "semantic-ui-react";
+import { Grid, List } from "semantic-ui-react";
 import { emojify } from "react-emojione";
 import Layout from "../components/layout";
-import profile from "../images/me.png";
+import Img from "gatsby-image";
 
 const styles = {
   syapse: {
@@ -16,12 +16,12 @@ const styles = {
   }
 };
 
-const About = props => (
+const About = (props, { data }) => (
   <Layout location={props.location}>
     <Grid stackable columns={2}>
       <Grid.Column>
         <h2>Hi, I'm Graham!</h2>
-        <Image fluid target="_blank" src={profile} />
+        <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
         <h3>What are you known for?</h3>
         <p>
           Graham's accumulation of talents was cultivated through curiosity,
@@ -122,3 +122,21 @@ const About = props => (
 );
 
 export default About;
+
+export const liquidImage = graphql`
+  fragment liquidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+  query {
+    imageTwo: file(relativePath: { eq: "me.png" }) {
+      ...liquidImage
+    }
+  }
+`;
