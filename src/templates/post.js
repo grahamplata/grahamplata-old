@@ -1,11 +1,11 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import { Container, Button, Icon } from "semantic-ui-react";
-import Layout from "../components/layout";
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import { Container, Button, Icon } from 'semantic-ui-react'
+import Layout from '../components/layout'
 
 const Template = ({ data, pageContext }) => {
-  const { markdownRemark: post } = data;
-  const { next, prev } = pageContext;
+  const { markdownRemark: post } = data
+  const { next, prev } = pageContext
 
   return (
     <Layout>
@@ -23,7 +23,7 @@ const Template = ({ data, pageContext }) => {
             )}
             <Link
               to="/blog"
-              style={{ paddingRight: "5px", paddingLeft: "5px" }}
+              style={{ paddingRight: '5px', paddingLeft: '5px' }}
             >
               <Button icon>
                 <Icon name="unordered list" />
@@ -40,12 +40,12 @@ const Template = ({ data, pageContext }) => {
             )}
           </Button.Group>
           <div>
-            <h1 style={{ margin: 0, display: "inline-block" }}>
+            <h1 style={{ margin: 0, display: 'inline-block' }}>
               {post.frontmatter.title}
             </h1>
           </div>
           <div>
-            <h3 style={{ margin: 0, display: "inline-block" }}>
+            <h3 style={{ margin: 0, display: 'inline-block' }}>
               {post.frontmatter.date}
             </h3>
           </div>
@@ -53,8 +53,8 @@ const Template = ({ data, pageContext }) => {
         <Container dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
 export const postQuery = graphql`
   query($path: String!) {
@@ -67,6 +67,6 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default Template;
+export default Template

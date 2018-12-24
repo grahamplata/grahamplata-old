@@ -1,10 +1,10 @@
-import React from "react";
-import { Header, Divider } from "semantic-ui-react";
-import Layout from "../components/layout";
+import React from 'react'
+import { Header, Divider } from 'semantic-ui-react'
+import Layout from '../components/layout'
 
 // Projects
-import DotaStats from "../projects/dotastats";
-import Reel from "../projects/reel";
+import DotaStats from '../projects/dotastats'
+import Reel from '../projects/reel'
 
 const Projects = props => (
   <Layout location={props.location}>
@@ -15,12 +15,12 @@ const Projects = props => (
     <Divider style={styles.spacer} />
     <Reel />
   </Layout>
-);
+)
 
 const styles = {
   spacer: {
-    paddingBottom: "20px"
-  }
-};
+    paddingBottom: '20px',
+  },
+}
 
-export default Projects;
+export default Projects

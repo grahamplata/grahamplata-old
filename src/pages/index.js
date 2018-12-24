@@ -1,7 +1,7 @@
-import React from "react";
-import Layout from "../components/layout";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react'
+import Layout from '../components/layout'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const IndexPage = props => (
   <StaticQuery
@@ -22,6 +22,6 @@ const IndexPage = props => (
       </Layout>
     )}
   />
-);
+)
 
-export default IndexPage;
+export default IndexPage

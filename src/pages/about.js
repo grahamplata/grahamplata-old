@@ -1,20 +1,20 @@
-import React from "react";
-import { Grid, List } from "semantic-ui-react";
-import { emojify } from "react-emojione";
-import Layout from "../components/layout";
-import Img from "gatsby-image";
+import React from 'react'
+import { Grid, List } from 'semantic-ui-react'
+import { emojify } from 'react-emojione'
+import Layout from '../components/layout'
+import Img from 'gatsby-image'
 
 const styles = {
   syapse: {
-    color: "#21C2D2",
+    color: '#21C2D2',
     fontWeight: 700,
-    textTransform: "uppercase"
+    textTransform: 'uppercase',
   },
   spacing: {
-    paddingTop: "3em",
-    paddingBottom: "3em"
-  }
-};
+    paddingTop: '3em',
+    paddingBottom: '3em',
+  },
+}
 
 const About = (props, { data }) => (
   <Layout location={props.location}>
@@ -39,7 +39,7 @@ const About = (props, { data }) => (
         <h3>Where are you currently?</h3>
         <p>
           Currently, I reside in Phoenixville, Pennsylvania working as a Data
-          Support Engineer for{" "}
+          Support Engineer for{' '}
           <a style={styles.syapse} href="https://www.syapse.com/">
             Syapse
           </a>
@@ -84,7 +84,7 @@ const About = (props, { data }) => (
         <h3>Where would you like to travel?</h3>
         <List>
           <List.Item>
-            <List.Icon>{emojify("🏔️")}</List.Icon>
+            <List.Icon>{emojify('🏔️')}</List.Icon>
             <List.Content>
               <List.Header>ICELAND</List.Header>
               <List.Description>
@@ -94,7 +94,7 @@ const About = (props, { data }) => (
             </List.Content>
           </List.Item>
           <List.Item>
-            <List.Icon>{emojify("🗺️")}</List.Icon>
+            <List.Icon>{emojify('🗺️')}</List.Icon>
             <List.Content>
               <List.Header>New Zealand</List.Header>
               <List.Description>
@@ -105,7 +105,7 @@ const About = (props, { data }) => (
             </List.Content>
           </List.Item>
           <List.Item>
-            <List.Icon>{emojify("🏎️")}</List.Icon>
+            <List.Icon>{emojify('🏎️')}</List.Icon>
             <List.Content>
               <List.Header>Pikes Peak International Hill Climb</List.Header>
               <List.Description>
@@ -119,9 +119,9 @@ const About = (props, { data }) => (
       </Grid.Column>
     </Grid>
   </Layout>
-);
+)
 
-export default About;
+export default About
 
 export const liquidImage = graphql`
   fragment liquidImage on File {
@@ -131,7 +131,7 @@ export const liquidImage = graphql`
       }
     }
   }
-`;
+`
 
 export const pageQuery = graphql`
   query {
@@ -139,4 +139,4 @@ export const pageQuery = graphql`
       ...liquidImage
     }
   }
-`;
+`

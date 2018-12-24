@@ -1,31 +1,31 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { Container } from "semantic-ui-react";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Container } from 'semantic-ui-react'
 
-import MainMenu from "../components/MainMenu";
-import Footer from "../components/Footer";
+import MainMenu from '../components/MainMenu'
+import Footer from '../components/Footer'
 
-import "semantic-ui-css/semantic.min.css";
+import 'semantic-ui-css/semantic.min.css'
 
 const styles = {
   container: {
-    display: "flex",
-    minHeight: "95vh",
-    flexDirection: "column"
+    display: 'flex',
+    minHeight: '95vh',
+    flexDirection: 'column',
   },
   subContainer: {
     flex: 1,
-    marginTop: "1.25em"
-  }
-};
+    marginTop: '1.25em',
+  },
+}
 
 const meta = [
-  { name: "description", content: "Graham Plata's digital Sandbox." },
+  { name: 'description', content: "Graham Plata's digital Sandbox." },
   {
-    name: "keywords",
-    content: "Graham, Plata, Graham Plata, dev, developer, video, photo"
-  }
-];
+    name: 'keywords',
+    content: 'Graham, Plata, Graham Plata, dev, developer, video, photo',
+  },
+]
 
 export default ({ children, location }) => (
   <div>
@@ -40,4 +40,4 @@ export default ({ children, location }) => (
       <Footer />
     </Container>
   </div>
-);
+)

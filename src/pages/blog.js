@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Header, Item } from "semantic-ui-react";
-import Layout from "../components/layout";
-import { Link, StaticQuery, graphql } from "gatsby";
+import React from 'react'
+import { Container, Header, Item } from 'semantic-ui-react'
+import Layout from '../components/layout'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 const BlogPage = ({ children, props }) => (
   <StaticQuery
@@ -68,6 +68,6 @@ const BlogPage = ({ children, props }) => (
       </Layout>
     )}
   />
-);
+)
 
-export default BlogPage;
+export default BlogPage
