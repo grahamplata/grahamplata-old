@@ -1,26 +1,27 @@
-import React from "react";
-import { Grid, List } from "semantic-ui-react";
-import Layout from "../components/layout";
-import Img from "gatsby-image";
+import React from 'react'
+import { Grid, List, Header } from 'semantic-ui-react'
+import Layout from '../components/layout'
+import Img from 'gatsby-image'
 
 const styles = {
   syapse: {
-    color: "#21C2D2",
+    color: '#21C2D2',
     fontWeight: 700,
-    textTransform: "uppercase"
+    textTransform: 'uppercase',
   },
   spacing: {
-    paddingTop: "3em",
-    paddingBottom: "3em"
-  }
-};
+    paddingTop: '3em',
+    paddingBottom: '3em',
+  },
+}
 
 const About = (props, { data }) => (
   <Layout location={props.location}>
-    <Grid stackable columns={2}>
+    <Header as="h2" textAlign="left">
+      <Header.Content>About</Header.Content>
+    </Header>
+    <Grid>
       <Grid.Column>
-        <h2>Hi, I'm Graham!</h2>
-        <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
         <h3>What are you known for?</h3>
         <p>
           Graham's accumulation of talents was cultivated through curiosity,
@@ -33,12 +34,17 @@ const About = (props, { data }) => (
           past to inform and influence his future endeavors.
         </p>
       </Grid.Column>
+    </Grid>
+    <Grid stackable columns={2}>
+      <Grid.Column>
+        <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+      </Grid.Column>
       <Grid.Column>
         <h2>Learn more about me</h2>
         <h3>Where are you currently?</h3>
         <p>
           Currently, I reside in Phoenixville, Pennsylvania working as a Data
-          Support Engineer for{" "}
+          Support Engineer for{' '}
           <a style={styles.syapse} href="https://www.syapse.com/">
             Syapse
           </a>
@@ -115,19 +121,19 @@ const About = (props, { data }) => (
       </Grid.Column>
     </Grid>
   </Layout>
-);
+)
 
-export default About;
+export default About
 
 export const liquidImage = graphql`
   fragment liquidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1000) {
+      fluid(maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }
   }
-`;
+`
 
 export const pageQuery = graphql`
   query {
@@ -135,4 +141,4 @@ export const pageQuery = graphql`
       ...liquidImage
     }
   }
-`;
+`

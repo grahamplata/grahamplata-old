@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 const IndexPage = props => (
   <StaticQuery
@@ -18,7 +17,7 @@ const IndexPage = props => (
     `}
     render={data => (
       <Layout location={props.location}>
-        <Img fluid={data.imageOne.childImageSharp.fluid} />
+        <p>1ßs</p>
       </Layout>
     )}
   />

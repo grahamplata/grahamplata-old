@@ -9,7 +9,7 @@ import Reel from '../projects/reel'
 const Projects = props => (
   <Layout location={props.location}>
     <Header as="h2" textAlign="left">
-      <Header.Content>Personal Projects</Header.Content>
+      <Header.Content>Projects</Header.Content>
     </Header>
     <DotaStats />
     <Divider style={styles.spacer} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header, Item } from 'semantic-ui-react'
+import { Header, Item } from 'semantic-ui-react'
 import Layout from '../components/layout'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
@@ -37,34 +37,31 @@ const BlogPage = ({ children, props }) => (
         <Header as="h2" textAlign="left">
           <Header.Content>Blog</Header.Content>
         </Header>
-        <Container>
-          <Item.Group>
-            {data.allMarkdownRemark.edges.map(post => (
-              <Item key={post.node.id}>
-                <Item.Image
-                  as={Link}
-                  to={post.node.frontmatter.path}
-                  target="_blank"
-                  size="medium"
-                  src={
-                    post.node.frontmatter.featuredImage.childImageSharp.sizes
-                      .src
-                  }
-                />
-                <Item.Content>
-                  <Link to={post.node.frontmatter.path}>
-                    <Item.Header as="h2">
-                      {post.node.frontmatter.title}
-                    </Item.Header>
-                  </Link>
-                  <Item.Meta>{post.node.frontmatter.date}</Item.Meta>
-                  <Item.Description>{post.node.excerpt}</Item.Description>
-                  <Item.Extra>@grahamplata</Item.Extra>
-                </Item.Content>
-              </Item>
-            ))}
-          </Item.Group>
-        </Container>
+        <Item.Group>
+          {data.allMarkdownRemark.edges.map(post => (
+            <Item key={post.node.id}>
+              <Item.Image
+                as={Link}
+                to={post.node.frontmatter.path}
+                target="_blank"
+                size="medium"
+                src={
+                  post.node.frontmatter.featuredImage.childImageSharp.sizes.src
+                }
+              />
+              <Item.Content>
+                <Link to={post.node.frontmatter.path}>
+                  <Item.Header as="h2">
+                    {post.node.frontmatter.title}
+                  </Item.Header>
+                </Link>
+                <Item.Meta>{post.node.frontmatter.date}</Item.Meta>
+                <Item.Description>{post.node.excerpt}</Item.Description>
+                <Item.Extra>@grahamplata</Item.Extra>
+              </Item.Content>
+            </Item>
+          ))}
+        </Item.Group>
       </Layout>
     )}
   />
