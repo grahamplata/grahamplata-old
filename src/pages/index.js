@@ -7,7 +7,7 @@ const IndexPage = props => (
   <StaticQuery
     query={graphql`
       {
-        imageOne: file(relativePath: { eq: "cl.jpg" }) {
+        imageOne: file(relativePath: { eq: "gp.JPG" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
