@@ -50,7 +50,7 @@ const Template = ({ data, pageContext }) => {
             </h3>
           </div>
         </div>
-        <Container dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Container text dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
     </Layout>
   )
