@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Item } from 'semantic-ui-react'
+import { Container, Header, Item, Label } from 'semantic-ui-react'
 import Layout from '../components/layout'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
@@ -13,7 +13,7 @@ const BlogPage = ({ children, props }) => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 300)
+              excerpt(pruneLength: 200)
               id
               frontmatter {
                 title
@@ -37,31 +37,36 @@ const BlogPage = ({ children, props }) => (
         <Header as="h2" textAlign="left">
           <Header.Content>Blog</Header.Content>
         </Header>
-        <Item.Group>
-          {data.allMarkdownRemark.edges.map(post => (
-            <Item key={post.node.id}>
-              <Item.Image
-                as={Link}
-                to={post.node.frontmatter.path}
-                target="_blank"
-                size="medium"
-                src={
-                  post.node.frontmatter.featuredImage.childImageSharp.sizes.src
-                }
-              />
-              <Item.Content>
-                <Link to={post.node.frontmatter.path}>
-                  <Item.Header as="h2">
-                    {post.node.frontmatter.title}
-                  </Item.Header>
-                </Link>
-                <Item.Meta>{post.node.frontmatter.date}</Item.Meta>
-                <Item.Description>{post.node.excerpt}</Item.Description>
-                <Item.Extra>@grahamplata</Item.Extra>
-              </Item.Content>
-            </Item>
-          ))}
-        </Item.Group>
+        <Container text>
+          <Item.Group>
+            {data.allMarkdownRemark.edges.map(post => (
+              <Item key={post.node.id}>
+                <Item.Image
+                  as={Link}
+                  to={post.node.frontmatter.path}
+                  target="_blank"
+                  size="medium"
+                  src={
+                    post.node.frontmatter.featuredImage.childImageSharp.sizes
+                      .src
+                  }
+                />
+                <Item.Content>
+                  <Link to={post.node.frontmatter.path}>
+                    <Item.Header as="h2">
+                      {post.node.frontmatter.title}
+                    </Item.Header>
+                  </Link>
+                  <Item.Meta>{post.node.frontmatter.date}</Item.Meta>
+                  <Item.Description>{post.node.excerpt}</Item.Description>
+                  <Item.Extra>
+                    <Label>@grahamplata</Label>
+                  </Item.Extra>
+                </Item.Content>
+              </Item>
+            ))}
+          </Item.Group>
+        </Container>
       </Layout>
     )}
   />
