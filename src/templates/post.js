@@ -1,12 +1,12 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { Container } from "semantic-ui-react";
-import Layout from "../components/layout";
-import BlogMenu from "../components/BlogMenu";
+import React from 'react'
+import { graphql } from 'gatsby'
+import { Container } from 'semantic-ui-react'
+import Layout from '../components/layout'
+import BlogMenu from '../components/BlogMenu'
 
 const Template = ({ data, pageContext }) => {
-  const { markdownRemark: post } = data;
-  const { next, prev } = pageContext;
+  const { markdownRemark: post } = data
+  const { next, prev } = pageContext
 
   return (
     <Layout>
@@ -22,8 +22,8 @@ const Template = ({ data, pageContext }) => {
         <Container text dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
 export const postQuery = graphql`
   query($path: String!) {
@@ -36,6 +36,6 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default Template;
+export default Template

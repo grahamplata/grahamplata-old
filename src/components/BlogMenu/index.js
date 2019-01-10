@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import { Link } from "gatsby";
-import { Button, Header, Icon } from "semantic-ui-react";
+import React, { Fragment } from 'react'
+import { Link } from 'gatsby'
+import { Button, Header, Icon } from 'semantic-ui-react'
 
 const BlogMenu = props => {
   return (
@@ -11,7 +11,7 @@ const BlogMenu = props => {
             <Button content="Previous" icon="left arrow" labelPosition="left" />
           </Link>
         )}
-        <Link to="/blog" style={{ paddingRight: "5px", paddingLeft: "5px" }}>
+        <Link to="/blog" style={{ paddingRight: '5px', paddingLeft: '5px' }}>
           <Button icon>
             <Icon name="unordered list" />
           </Button>
@@ -31,7 +31,7 @@ const BlogMenu = props => {
         </Header>
       </Fragment>
     </Fragment>
-  );
-};
+  )
+}
 
-export default BlogMenu;
+export default BlogMenu
