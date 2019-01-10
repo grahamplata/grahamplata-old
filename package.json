@@ -5,23 +5,23 @@
   "author": "Graham Plata <graham.plata@gmail.com>",
   "dependencies": {
     "exif-js": "^2.3.0",
-    "gatsby": "^2.0.50",
-    "gatsby-cli": "^2.4.5",
-    "gatsby-codemods": "^1.0.7",
-    "gatsby-image": "^2.0.20",
-    "gatsby-plugin-google-analytics": "^2.0.7",
-    "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-sharp": "^2.0.12",
+    "gatsby": "^2.0.91",
+    "gatsby-cli": "^2.4.8",
+    "gatsby-codemods": "^1.0.8",
+    "gatsby-image": "^2.0.26",
+    "gatsby-plugin-google-analytics": "^2.0.9",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-remark-images": "^2.0.6",
-    "gatsby-remark-prismjs": "^3.0.3",
-    "gatsby-source-filesystem": "^2.0.8",
-    "gatsby-transformer-remark": "^2.1.12",
-    "gatsby-transformer-sharp": "^2.1.8",
+    "gatsby-remark-prismjs": "^3.2.0",
+    "gatsby-source-filesystem": "^2.0.13",
+    "gatsby-transformer-remark": "^2.2.0",
+    "gatsby-transformer-sharp": "^2.1.10",
     "prismjs": "^1.15.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
-    "react-player": "^1.7.0",
+    "react-player": "^1.8.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.79.0",
     "serve": "^7.0.0",
@@ -41,6 +41,6 @@
     "docker": "gatsby build && docker build --rm -f Dockerfile -t grahamplata/gatsby ."
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "prettier": "^1.15.3"
   }
 }
