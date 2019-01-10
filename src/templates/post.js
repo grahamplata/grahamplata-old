@@ -10,15 +10,17 @@ const Template = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <div style={{ marginBottom: 25 }}>
-        <BlogMenu
-          title={post.frontmatter.title}
-          date={post.frontmatter.date}
-          next={next.frontmatter.path}
-          prev={prev.frontmatter.path}
-        />
-      </div>
-      <Container text dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Container>
+        <div style={{ marginBottom: 25 }}>
+          <BlogMenu
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+            next={next.frontmatter.path}
+            prev={prev.frontmatter.path}
+          />
+        </div>
+        <Container text dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Container>
     </Layout>
   );
 };

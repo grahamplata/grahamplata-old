@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "gatsby";
-import { Button, Icon } from "semantic-ui-react";
+import { Button, Header, Icon } from "semantic-ui-react";
 
 const BlogMenu = props => {
   return (
@@ -23,12 +23,12 @@ const BlogMenu = props => {
         )}
       </Button.Group>
       <Fragment>
-        <div>
-          <h1 style={{ margin: 0, display: "inline-block" }}>{props.title}</h1>
-        </div>
-        <div>
-          <h3 style={{ margin: 0, display: "inline-block" }}>{props.date}</h3>
-        </div>
+        <Header as="h2" textAlign="left">
+          <Header.Content>{props.title}</Header.Content>
+        </Header>
+        <Header as="h3" textAlign="left">
+          <Header.Content>{props.date}</Header.Content>
+        </Header>
       </Fragment>
     </Fragment>
   );
