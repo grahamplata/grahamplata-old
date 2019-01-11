@@ -2,6 +2,7 @@ import React from 'react'
 import { Grid, List, Header } from 'semantic-ui-react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 const styles = {
   syapse: {
