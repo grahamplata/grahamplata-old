@@ -13,11 +13,6 @@ const Template = ({ data }) => {
           <Header.Subheader>{post.frontmatter.date}</Header.Subheader>
         </Header>
         <Container dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Header as="h2" textAlign="left">
-          <Header.Subheader>
-            Written by: @{post.frontmatter.author}
-          </Header.Subheader>
-        </Header>
       </Container>
     </Layout>
   );
