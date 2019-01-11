@@ -1,20 +1,23 @@
 ---
-path: '/demoday'
-title: 'Bike Demo Courtesy of Twisted Cog'
-date: '2018-11-04'
+path: "/demoday"
+title: "Bike Demo Courtesy of Twisted Cog"
+date: "2018-11-04"
 featuredImage: "./IMG_9884.JPG"
+author: grahamplata
+excert: "Demoing some luxury gravel Bikes."
+tags: ["photos", "blog", "cycling"]
 ---
 
 ## The Ride by the Numbers
 
-+ Distance: 26.0mi
-+ Moving Time: 2:04:03
-+ Elevation: 595ft
-+ Weather: Sunny, clear, 50 degrees Fahrenheit.
-+ Trail:  - Lock 60 --> Schuylkill Canal Towpath --> PRT to Oaks --> Oaks to Collegeville --> and back!
-+ Bike specs
-    - Graham: Lauf True Grit
-    - Sabrina: Specialized Roubaix
+- Distance: 26.0mi
+- Moving Time: 2:04:03
+- Elevation: 595ft
+- Weather: Sunny, clear, 50 degrees Fahrenheit.
+- Trail: - Lock 60 --> Schuylkill Canal Towpath --> PRT to Oaks --> Oaks to Collegeville --> and back!
+- Bike specs
+  - Graham: Lauf True Grit
+  - Sabrina: Specialized Roubaix
 
 How many times can a couple get away with "test riding" luxury bikes without ending up on MOST WANTED: NO INTENT TO BUY posters at local bike shops? So far, the tally is four. We go in with some research, manners, and very eager-eyes. This tactic, thankfully, makes us likable enough that the workers let us get away with it.
 

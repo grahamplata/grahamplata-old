@@ -3,6 +3,9 @@ path: "/terraform"
 title: "Terraform and Terraform accessories"
 date: "2018-11-21"
 featuredImage: "./terraform.png"
+author: grahamplata
+excert: "Some reference material for getting started with Terraform on Linode"
+tags: ["terraform", "devops"]
 ---
 
 In this post, I am exploring Terraform. It is a way to define infrastructure with code and will enable you to build and track changes to hardware. Below I document my process of getting started with the tool by setting up a Nanode.
