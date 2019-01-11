@@ -39,7 +39,7 @@ const BlogPage = ({ children, props }) => (
         <Header as="h2" textAlign="left">
           <Header.Content>Blog</Header.Content>
         </Header>
-        <Container text>
+        <Container>
           <Item.Group relaxed>
             {data.allMarkdownRemark.edges.map(post => (
               <Item key={post.node.id}>
