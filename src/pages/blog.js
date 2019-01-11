@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container, Header, Item, Label } from 'semantic-ui-react'
-import Layout from '../components/layout'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { Container, Header, Item, Label } from "semantic-ui-react";
+import Layout from "../components/layout";
+import { Link, StaticQuery, graphql } from "gatsby";
 
 const BlogPage = ({ children, props }) => (
   <StaticQuery
@@ -13,12 +13,14 @@ const BlogPage = ({ children, props }) => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 200)
               id
               frontmatter {
                 title
                 path
                 date(formatString: "MMMM DD, YYYY")
+                author
+                excert
+                tags
                 featuredImage {
                   childImageSharp {
                     sizes(maxWidth: 550) {
@@ -38,7 +40,7 @@ const BlogPage = ({ children, props }) => (
           <Header.Content>Blog</Header.Content>
         </Header>
         <Container>
-          <Item.Group>
+          <Item.Group relaxed>
             {data.allMarkdownRemark.edges.map(post => (
               <Item key={post.node.id}>
                 <Item.Image
@@ -50,16 +52,24 @@ const BlogPage = ({ children, props }) => (
                       .src
                   }
                 />
-                <Item.Content>
+                <Item.Content verticalAlign="middle">
                   <Link to={post.node.frontmatter.path}>
                     <Item.Header as="h2">
                       {post.node.frontmatter.title}
                     </Item.Header>
                   </Link>
                   <Item.Meta>{post.node.frontmatter.date}</Item.Meta>
-                  <Item.Description>{post.node.excerpt}</Item.Description>
+                  <Item.Description>
+                    {post.node.frontmatter.excert}
+                  </Item.Description>
                   <Item.Extra>
-                    <Label>@grahamplata</Label>
+                    {post.node.frontmatter.tags.map(tag => {
+                      return (
+                        <Label size="mini" key={tag}>
+                          {tag}
+                        </Label>
+                      );
+                    })}
                   </Item.Extra>
                 </Item.Content>
               </Item>
@@ -69,6 +79,6 @@ const BlogPage = ({ children, props }) => (
       </Layout>
     )}
   />
-)
+);
 
-export default BlogPage
+export default BlogPage;

@@ -1,7 +1,10 @@
 ---
-path: '/hello-world'
-title: 'Starting a blog... again!'
-date: '2018-01-01'
+path: "/hello-world"
+title: "Starting a blog... again!"
+date: "2018-01-01"
+author: grahamplata
+excert: "My attempt at keeping a blog again."
+tags: ["blog post"]
 featuredImage: "./bird.png"
 ---
 
@@ -11,10 +14,10 @@ Fast forward... This site was built with Gatsby and I hope that it is enough of 
 
 ### Ideas
 
-* Every day carry
-* Birding
-* Github projects
-* Helpful gists
-* Travel / Photo blogs
+- Every day carry
+- Birding
+- Github projects
+- Helpful gists
+- Travel / Photo blogs
 
 If you have any ideas for content feel free to drop me a line <mailto:graham.plata@gmail.com>

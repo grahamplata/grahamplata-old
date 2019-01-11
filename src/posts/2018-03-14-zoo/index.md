@@ -1,7 +1,10 @@
 ---
-path: '/zoo'
-title: 'Photos from the Philadelphia Zoo'
-date: '2018-03-14'
+path: "/zoo"
+title: "Philadelphia Zoo"
+date: "2018-03-14"
+author: grahamplata
+excert: "Exploring the Philadelphia Zoo with a Telephoto."
+tags: ["photos"]
 featuredImage: "./13.jpg"
 ---
 

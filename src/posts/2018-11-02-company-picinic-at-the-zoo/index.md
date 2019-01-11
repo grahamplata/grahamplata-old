@@ -3,6 +3,9 @@ path: "/syapse-zoo"
 title: "Photos from the Elmwood Park Zoo"
 date: "2018-11-02"
 featuredImage: "./GRP_4699.JPG"
+author: grahamplata
+excert: "Photos from my companies picnic"
+tags: ["photos", "blog"]
 ---
 
 ![](GRP_4699.JPG)

@@ -11,13 +11,15 @@ exports.createPages = ({ actions, graphql }) => {
         totalCount
         edges {
           node {
-            excerpt(pruneLength: 210)
             html
             id
             frontmatter {
               path
               title
               date
+              author
+              excert
+              tags
             }
           }
         }

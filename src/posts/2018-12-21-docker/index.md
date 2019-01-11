@@ -3,6 +3,9 @@ path: "/docker"
 title: "Dockerizing a Gatsby Static Site Deployment"
 date: "2018-12-21"
 featuredImage: "./docker.png"
+author: grahamplata
+excert: "Dockerizing a GatsbyJS build."
+tags: ["docker", "blog"]
 ---
 
 ## Dockerfile

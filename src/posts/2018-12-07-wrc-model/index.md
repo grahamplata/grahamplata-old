@@ -3,6 +3,9 @@ path: "/wrc-model"
 title: "Subaru Impreza WRC 2001 Model Kit"
 date: "2018-12-07"
 featuredImage: "./subi.jpg"
+author: grahamplata
+excert: "Tamiya Subaru Impreza WRC build log."
+tags: ["photos", "blog", "model car"]
 ---
 
 ## The inspiration for the kit

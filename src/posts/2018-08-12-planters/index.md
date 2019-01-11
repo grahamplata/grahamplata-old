@@ -1,8 +1,11 @@
 ---
-path: '/mini-garden'
-title: 'Late Season Effort'
-date: '2018-08-12'
+path: "/mini-garden"
+title: "Late Season Effort"
+date: "2018-08-12"
 featuredImage: "./GRP_4486.JPG"
+author: grahamplata
+excert: "A not so secret garden."
+tags: ["photos", "blog"]
 ---
 
 # Nyx's green thumb.
@@ -13,10 +16,10 @@ In an act of rebellion against the remaining bit of weekend, Nyx and Sabrina sta
 
 # Herbs and why we chose them
 
-* _Cilantro_ - chosen because it's great to have around for street tacos
-* _Lavendar_ - is great when infused as an essential oil to relieve tension headaches, encourage a good night's rest, and even helps to keep bugs away.
-* _Rosemary_ - is great for cooking, especially for roasts and even in cocktails.
-* _Mint_ - helps soothe an upset stomach, goes great in mojitos, lemonade, tea, and also acts as a bug repellent.
+- _Cilantro_ - chosen because it's great to have around for street tacos
+- _Lavendar_ - is great when infused as an essential oil to relieve tension headaches, encourage a good night's rest, and even helps to keep bugs away.
+- _Rosemary_ - is great for cooking, especially for roasts and even in cocktails.
+- _Mint_ - helps soothe an upset stomach, goes great in mojitos, lemonade, tea, and also acts as a bug repellent.
 
 ![](GRP_4486.JPG)
 
