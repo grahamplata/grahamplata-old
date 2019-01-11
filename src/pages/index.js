@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Container, Grid } from 'semantic-ui-react'
 
-const IndexPage = props => (
+const IndexPage = () => (
   <StaticQuery
     query={graphql`
       {
@@ -18,7 +18,7 @@ const IndexPage = props => (
       }
     `}
     render={data => (
-      <Layout location={props.location}>
+      <Layout>
         <Grid relaxed stackable>
           <Grid.Column>
             <Grid.Row>

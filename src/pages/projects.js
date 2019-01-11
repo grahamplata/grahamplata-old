@@ -1,8 +1,6 @@
 import React from 'react'
 import { Header, Divider } from 'semantic-ui-react'
 import Layout from '../components/layout'
-
-// Projects
 import DotaStats from '../projects/dotastats'
 import Reel from '../projects/reel'
 

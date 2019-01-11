@@ -13,7 +13,7 @@ const Template = ({ data, pageContext }) => {
             <Header as="h2" textAlign="left">
               <Header.Content>{post.frontmatter.title}</Header.Content>
             </Header>
-            <Header as="h3" textAlign="left">
+            <Header as="h4" textAlign="left">
               <Header.Content>{post.frontmatter.date}</Header.Content>
             </Header>
           </Fragment>
