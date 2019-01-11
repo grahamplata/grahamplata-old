@@ -1,24 +1,24 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { Container, Grid } from "semantic-ui-react";
-import MainMenu from "../components/MainMenu";
-import Footer from "../components/Footer";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Container, Grid } from 'semantic-ui-react'
+import MainMenu from '../components/MainMenu'
+import Footer from '../components/Footer'
 
-import "semantic-ui-css/semantic.min.css";
+import 'semantic-ui-css/semantic.min.css'
 
 const meta = [
-  { name: "description", content: "Graham Plata's digital Sandbox." },
+  { name: 'description', content: "Graham Plata's digital Sandbox." },
   {
-    name: "keywords",
-    content: "Graham, Plata, Graham Plata, dev, developer, video, photo"
-  }
-];
+    name: 'keywords',
+    content: 'Graham, Plata, Graham Plata, dev, developer, video, photo',
+  },
+]
 
 const styles = {
   container: {
-    marginTop: "15px"
-  }
-};
+    marginTop: '15px',
+  },
+}
 
 export default ({ children }) => (
   <div style={styles.container}>
@@ -35,4 +35,4 @@ export default ({ children }) => (
       </Grid.Column>
     </Grid>
   </div>
-);
+)

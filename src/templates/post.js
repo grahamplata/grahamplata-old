@@ -18,7 +18,7 @@ const Template = ({ data, pageContext }) => {
             </Header>
           </Fragment>
         </div>
-        <Container text dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Container dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
     </Layout>
   )
