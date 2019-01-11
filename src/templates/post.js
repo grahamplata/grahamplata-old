@@ -1,10 +1,10 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { Header, Container } from 'semantic-ui-react'
-import Layout from '../components/layout'
+import React from "react";
+import { graphql } from "gatsby";
+import { Header, Container } from "semantic-ui-react";
+import Layout from "../components/layout";
 
 const Template = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
   return (
     <Layout>
       <Container>
@@ -13,10 +13,15 @@ const Template = ({ data }) => {
           <Header.Subheader>{post.frontmatter.date}</Header.Subheader>
         </Header>
         <Container dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Header as="h2" textAlign="left">
+          <Header.Subheader>
+            Written by: @{post.frontmatter.author}
+          </Header.Subheader>
+        </Header>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
 export const postQuery = graphql`
   query($path: String!) {
@@ -26,9 +31,12 @@ export const postQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        author
+        excert
+        tags
       }
     }
   }
-`
+`;
 
-export default Template
+export default Template;
