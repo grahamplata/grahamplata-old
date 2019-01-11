@@ -42,7 +42,6 @@ const BlogPage = ({ children, props }) => (
             {data.allMarkdownRemark.edges.map(post => (
               <Item key={post.node.id}>
                 <Item.Image
-                  as={Link}
                   to={post.node.frontmatter.path}
                   target="_blank"
                   size="medium"

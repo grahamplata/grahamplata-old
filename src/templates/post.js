@@ -1,23 +1,22 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
-import { Container } from 'semantic-ui-react'
+import { Header, Container } from 'semantic-ui-react'
 import Layout from '../components/layout'
-import BlogMenu from '../components/BlogMenu'
 
 const Template = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
-  const { next, prev } = pageContext
-
   return (
     <Layout>
       <Container>
         <div style={{ marginBottom: 25 }}>
-          <BlogMenu
-            title={post.frontmatter.title}
-            date={post.frontmatter.date}
-            next={next.frontmatter.path}
-            prev={prev.frontmatter.path}
-          />
+          <Fragment>
+            <Header as="h2" textAlign="left">
+              <Header.Content>{post.frontmatter.title}</Header.Content>
+            </Header>
+            <Header as="h3" textAlign="left">
+              <Header.Content>{post.frontmatter.date}</Header.Content>
+            </Header>
+          </Fragment>
         </div>
         <Container text dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
