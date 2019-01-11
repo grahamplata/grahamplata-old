@@ -18,14 +18,6 @@ module.exports = {
         name: `images`
       }
     },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `purple`,
-        showSpinner: false,
-        minimum: 0.1
-      }
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
