@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Header, Container } from "semantic-ui-react";
+import { Header, Divider, Container, Grid } from "semantic-ui-react";
 import Layout from "../components/layout";
 import BlogNav from "../components/BlogNav";
 
@@ -12,12 +12,17 @@ const BlogPost = ({ data, pageContext }) => {
   return (
     <Layout>
       <Container>
-        <Header as="h2" textAlign="left">
-          {title}
-          <Header.Subheader>{date}</Header.Subheader>
-        </Header>
-        <BlogNav next={next} prev={prev} />
-        <Container dangerouslySetInnerHTML={{ __html: html }} />
+        <Grid>
+          <Grid.Column>
+            <Header as="h2" textAlign="left">
+              {title}
+              <Header.Subheader>{date}</Header.Subheader>
+            </Header>
+            <BlogNav next={next} prev={prev} />
+            <Container text dangerouslySetInnerHTML={{ __html: html }} />
+            <BlogNav next={next} prev={prev} />
+          </Grid.Column>
+        </Grid>
       </Container>
     </Layout>
   );

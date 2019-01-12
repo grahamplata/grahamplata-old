@@ -8,7 +8,7 @@ const BlogNav = props => {
   const isFirst = prev === false;
   return (
     <>
-      <Button.Group compact>
+      <Button.Group floated="right" compact>
         {isFirst ? (
           <Button as={Link} disabled={isFirst}>
             Prev
