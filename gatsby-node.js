@@ -7,8 +7,10 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark {
-        totalCount
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
         edges {
           node {
             html
@@ -33,21 +35,21 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(({ node }, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
+      const prev = index === 0 ? false : posts[index - 1].node;
+      const next = index === posts.length - 1 ? false : posts[index + 1].node;
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,
         context: {
-          next,
-          previous
+          prev,
+          next
         }
       });
     });
 
     const postsPerPage = 3;
     const numPages = Math.ceil(posts.length / postsPerPage);
+
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/blog` : `/blog/${i + 1}`,

@@ -1,22 +1,27 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { Header, Container } from 'semantic-ui-react'
-import Layout from '../components/layout'
+import React from "react";
+import { graphql } from "gatsby";
+import { Header, Container } from "semantic-ui-react";
+import Layout from "../components/layout";
+import BlogNav from "../components/BlogNav";
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+const BlogPost = ({ data, pageContext }) => {
+  const { markdownRemark: post } = data;
+  const { frontmatter, html } = post;
+  const { title, date } = frontmatter;
+  const { next, prev } = pageContext;
   return (
     <Layout>
       <Container>
         <Header as="h2" textAlign="left">
-          {post.frontmatter.title}
-          <Header.Subheader>{post.frontmatter.date}</Header.Subheader>
+          {title}
+          <Header.Subheader>{date}</Header.Subheader>
         </Header>
-        <Container dangerouslySetInnerHTML={{ __html: post.html }} />
+        <BlogNav next={next} prev={prev} />
+        <Container dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
 export const postQuery = graphql`
   query($path: String!) {
@@ -32,6 +37,6 @@ export const postQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default BlogPost
+export default BlogPost;
