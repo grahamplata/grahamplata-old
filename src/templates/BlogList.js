@@ -18,31 +18,24 @@ export default class BlogList extends React.Component {
           <Header.Content>Blog</Header.Content>
         </Header>
         <Container>
-          <>
-            <Button.Group compact floated="right">
-              {!isFirst && (
-                <Button as={Link} to={prevPage}>
-                  Prev
-                </Button>
-              )}
-              {Array.from({ length: numPages }, (_, i) => (
-                <Button
-                  active={currentPage === i + 1}
-                  as={Link}
-                  to={`blog/${i === 0 ? "" : i + 1}`}
-                  key={i}
-                >
-                  {i + 1}
-                </Button>
-              ))}
-              {!isLast && (
-                <Button as={Link} to={nextPage}>
-                  Next
-                </Button>
-              )}
-              z{" "}
-            </Button.Group>
-          </>
+          <Button.Group compact>
+            <Button as={Link} to={prevPage} disabled={isFirst}>
+              Prev
+            </Button>
+            {Array.from({ length: numPages }, (_, i) => (
+              <Button
+                active={currentPage === i + 1}
+                as={Link}
+                to={`blog/${i === 0 ? "" : i + 1}`}
+                key={i}
+              >
+                {i + 1}
+              </Button>
+            ))}
+            <Button as={Link} to={nextPage} disabled={isLast}>
+              Next
+            </Button>
+          </Button.Group>
           <Item.Group relaxed>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title;
