@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Item, Label } from "semantic-ui-react";
+import { Container, Header, Item, Label, Button } from "semantic-ui-react";
 import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
 
@@ -18,21 +18,31 @@ export default class BlogList extends React.Component {
           <Header.Content>Blog</Header.Content>
         </Header>
         <Container>
-          {!isFirst && (
-            <Link to={prevPage} rel="prev">
-              Previous Page
-            </Link>
-          )}
-          {Array.from({ length: numPages }, (_, i) => (
-            <li key={`pagination-number${i + 1}`}>
-              <Link to={`blog/${i === 0 ? "" : i + 1}`}>{i + 1}</Link>
-            </li>
-          ))}
-          {!isLast && (
-            <Link to={nextPage} rel="next">
-              Next Page
-            </Link>
-          )}
+          <>
+            <Button.Group compact floated="right">
+              {!isFirst && (
+                <Button as={Link} to={prevPage}>
+                  Prev
+                </Button>
+              )}
+              {Array.from({ length: numPages }, (_, i) => (
+                <Button
+                  active={currentPage === i + 1}
+                  as={Link}
+                  to={`blog/${i === 0 ? "" : i + 1}`}
+                  key={i}
+                >
+                  {i + 1}
+                </Button>
+              ))}
+              {!isLast && (
+                <Button as={Link} to={nextPage}>
+                  Next
+                </Button>
+              )}
+              z{" "}
+            </Button.Group>
+          </>
           <Item.Group relaxed>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title;
