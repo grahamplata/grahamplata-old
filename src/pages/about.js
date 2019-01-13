@@ -3,7 +3,7 @@ import { Container, Grid, Header } from 'semantic-ui-react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
-import Bio from '../components/Bio'
+// import Bio from '../components/Bio'
 import AboutMe from '../components/AboutMe'
 
 const About = (props, { data }) => (
@@ -13,9 +13,7 @@ const About = (props, { data }) => (
     </Header>
     <Container>
       <Grid>
-        <Grid.Column>
-          <Bio />
-        </Grid.Column>
+        <Grid.Column>{/* <Bio /> */}</Grid.Column>
       </Grid>
       <Grid stackable columns={2}>
         <Grid.Column>

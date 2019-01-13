@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "gatsby";
-import { Button } from "semantic-ui-react";
+import React from 'react'
+import { Link } from 'gatsby'
+import { Button } from 'semantic-ui-react'
 
 const BlogNav = props => {
-  const { next, prev } = props;
-  const isLast = next === false;
-  const isFirst = prev === false;
+  const { next, prev } = props
+  const isLast = next === false
+  const isFirst = prev === false
   return (
     <>
       <Button.Group floated="right" compact>
@@ -29,7 +29,7 @@ const BlogNav = props => {
         )}
       </Button.Group>
     </>
-  );
-};
+  )
+}
 
-export default BlogNav;
+export default BlogNav
