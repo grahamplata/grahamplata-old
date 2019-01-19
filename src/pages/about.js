@@ -1,10 +1,10 @@
-import React from 'react'
-import { Container, Grid, Header } from 'semantic-ui-react'
-import Layout from '../components/layout'
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
+import React from "react";
+import { Container, Grid, Header } from "semantic-ui-react";
+import Layout from "../components/layout";
+import Img from "gatsby-image";
+import { graphql } from "gatsby";
 // import Bio from '../components/Bio'
-import AboutMe from '../components/AboutMe'
+import AboutMe from "../components/AboutMe";
 
 const About = (props, { data }) => (
   <Layout location={props.location}>
@@ -12,9 +12,6 @@ const About = (props, { data }) => (
       <Header.Content>About</Header.Content>
     </Header>
     <Container>
-      <Grid>
-        <Grid.Column>{/* <Bio /> */}</Grid.Column>
-      </Grid>
       <Grid stackable columns={2}>
         <Grid.Column>
           <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
@@ -25,9 +22,9 @@ const About = (props, { data }) => (
       </Grid>
     </Container>
   </Layout>
-)
+);
 
-export default About
+export default About;
 
 export const liquidImage = graphql`
   fragment liquidImage on File {
@@ -37,7 +34,7 @@ export const liquidImage = graphql`
       }
     }
   }
-`
+`;
 
 export const pageQuery = graphql`
   query {
@@ -45,4 +42,4 @@ export const pageQuery = graphql`
       ...liquidImage
     }
   }
-`
+`;
