@@ -11,4 +11,4 @@ RUN gatsby build
 FROM nginx:stable
 COPY --from=build-stage /app/public /var/www
 COPY --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
-ENTRYPOINT ["nginx","-g"]
+CMD ["nginx", "-g", "daemon off;"]
