@@ -38,17 +38,17 @@ class MainMenu extends Component {
           />
           <Menu.Item
             as={Link}
-            to="/blog"
-            name="blog"
-            active={activeItem === 'blog'}
+            to="/projects"
+            name="projects"
+            active={activeItem === 'projects'}
             onClick={this.handleItemClick}
             color="purple"
           />
           <Menu.Item
             as={Link}
-            to="/projects"
-            name="projects"
-            active={activeItem === 'projects'}
+            to="/blog"
+            name="blog"
+            active={activeItem === 'blog'}
             onClick={this.handleItemClick}
             color="purple"
           />
