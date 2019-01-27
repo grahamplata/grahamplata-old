@@ -3,7 +3,12 @@ import { Segment, Icon } from 'semantic-ui-react'
 
 const Footer = () => (
   <footer>
-    <Segment basic size="small" textAlign="center">
+    <Segment
+      basic
+      vertical
+      style={{ margin: '1em 0em 0em', padding: '1em 0em' }}
+      textAlign="center"
+    >
       <p>
         Made with <Icon color="teal" name="heart" /> by{' '}
         <a href="https://www.twitter.com/grahamplata/">@grahamplata</a> using

@@ -19,7 +19,7 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <Grid relaxed stackable>
+        <Grid verticalAlign="middle">
           <Grid.Column>
             <Grid.Row>
               <Container>

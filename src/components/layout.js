@@ -7,18 +7,16 @@ import 'semantic-ui-css/semantic.min.css'
 import meta from './meta'
 
 export default ({ children }) => (
-  <div style={{ marginTop: '15px' }}>
+  <div style={{ margin: '1em 0em 0em', padding: '1em 0em' }}>
     <Helmet title="Graham Plata's Digital Sandbox" meta={meta} />
-    <Grid verticalAlign="middle" columns={1} centered>
-      <Grid.Column>
-        <Grid.Row>
-          <Container>
-            <MainMenu />
-            {children}
-            <Footer />
-          </Container>
-        </Grid.Row>
-      </Grid.Column>
-    </Grid>
+    <Grid.Column>
+      <Grid.Row>
+        <Container>
+          <MainMenu />
+          {children}
+        </Container>
+      </Grid.Row>
+    </Grid.Column>
+    <Footer />
   </div>
 )

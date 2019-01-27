@@ -1,9 +1,8 @@
 import React from 'react'
-import { Container, Grid, Header } from 'semantic-ui-react'
+import { Grid, Header } from 'semantic-ui-react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
-// import Bio from '../components/Bio'
 import AboutMe from '../components/AboutMe'
 
 const About = (props, { data }) => (
@@ -11,16 +10,14 @@ const About = (props, { data }) => (
     <Header as="h2" textAlign="left">
       <Header.Content>About</Header.Content>
     </Header>
-    <Container>
-      <Grid stackable columns={2}>
-        <Grid.Column>
-          <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
-        </Grid.Column>
-        <Grid.Column>
-          <AboutMe />
-        </Grid.Column>
-      </Grid>
-    </Container>
+    <Grid stackable columns={2} verticalAlign="middle">
+      <Grid.Column>
+        <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+      </Grid.Column>
+      <Grid.Column>
+        <AboutMe />
+      </Grid.Column>
+    </Grid>
   </Layout>
 )
 
