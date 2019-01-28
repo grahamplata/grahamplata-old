@@ -18,11 +18,11 @@ const BlogPost = ({ data, pageContext }) => {
               {title}
               <Header.Subheader>{date}</Header.Subheader>
             </Header>
+            <BlogNav next={next} prev={prev} />
             <Grid.Column>
-              <BlogNav next={next} prev={prev} />
               <Container text dangerouslySetInnerHTML={{ __html: html }} />
-              <BlogNav next={next} prev={prev} />
             </Grid.Column>
+            <BlogNav next={next} prev={prev} />
           </Grid.Column>
         </Grid>
       </Container>
