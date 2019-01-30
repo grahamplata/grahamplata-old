@@ -11,14 +11,14 @@ const BlogPost = ({ data, pageContext }) => {
   const { next, prev } = pageContext
   return (
     <Layout>
+      <BlogNav next={next} prev={prev} />
+      <Header as="h2" textAlign="left">
+        {title}
+        <Header.Subheader>{date}</Header.Subheader>
+      </Header>
       <Container>
         <Grid>
           <Grid.Column>
-            <Header as="h2" textAlign="left">
-              {title}
-              <Header.Subheader>{date}</Header.Subheader>
-            </Header>
-            <BlogNav next={next} prev={prev} />
             <Grid.Column>
               <Container text dangerouslySetInnerHTML={{ __html: html }} />
             </Grid.Column>
