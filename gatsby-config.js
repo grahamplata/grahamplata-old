@@ -12,7 +12,6 @@ module.exports = {
     description: "Graham Plata's Digital Sandbox"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -60,6 +59,8 @@ module.exports = {
         anonymize: true,
         respectDNT: true
       }
-    }
+    },
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet"
   ]
 };
