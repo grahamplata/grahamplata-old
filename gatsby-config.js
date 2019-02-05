@@ -52,6 +52,18 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Graham Plata",
+        short_name: "SWang",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "src/images/logo.png"
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-11254643-2",
