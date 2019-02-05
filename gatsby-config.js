@@ -1,6 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: "Graham Plata's | Digital Sandbox"
+    title: "Graham Plata's Digital Sandbox",
+    author: "Graham Plata",
+    siteName: "grahamplata.com",
+    bio: "A skill collector",
+    siteUrl: "https://grahamplata.com/",
+    github: "https://github.com/grahamplata",
+    twitter: "https://twitter.com/grahamplata",
+    linkedin: "https://www.linkedin.com/in/grahamplata",
+    homeCity: "Philadelphia",
+    description: "Graham Plata's Digital Sandbox"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
