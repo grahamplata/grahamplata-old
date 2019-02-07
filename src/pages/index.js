@@ -1,8 +1,8 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import { Container, Grid } from 'semantic-ui-react'
+import React from "react";
+import Layout from "../components/layout";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { Container, Grid } from "semantic-ui-react";
 
 const IndexPage = () => (
   <StaticQuery
@@ -31,6 +31,6 @@ const IndexPage = () => (
       </Layout>
     )}
   />
-)
+);
 
-export default IndexPage
+export default IndexPage;
