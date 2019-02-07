@@ -1,21 +1,12 @@
-import React from 'react'
-import { Segment, Icon } from 'semantic-ui-react'
+import React from "react";
 
 const Footer = () => (
   <footer>
-    <Segment
-      basic
-      vertical
-      style={{ margin: '1em 0em 0em', padding: '1em 0em' }}
-      textAlign="center"
-    >
-      <p>
-        Made with <Icon color="teal" name="heart" /> by{' '}
-        <a href="https://www.twitter.com/grahamplata/">@grahamplata</a> using
-        <a href="https://www.gatsbyjs.org/"> @gatsbyJS</a>
-      </p>
-    </Segment>
+    <p>
+      Made by <a href="https://www.twitter.com/grahamplata/">@grahamplata</a>{" "}
+      using <a href="https://www.gatsbyjs.org/"> @gatsbyJS</a>
+    </p>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

@@ -8,7 +8,7 @@ export default class BlogList extends React.Component {
     const posts = this.props.data.allMarkdownRemark.edges;
     const { currentPage, numPages } = this.props.pageContext;
     const isFirst = currentPage === 1;
-    const isLast = currentPage === numPages;
+    // const isLast = currentPage === numPages;
     const prevPage =
       currentPage - 1 === 1 ? "blog/" : `blog/${currentPage - 1}`.toString();
     const nextPage = `blog/${currentPage + 1}`.toString();
@@ -28,9 +28,7 @@ export default class BlogList extends React.Component {
             {i + 1}
           </Link>
         ))}
-        <a as={Link} to={nextPage} disabled={isLast}>
-          Next
-        </a>
+        <a href={nextPage}>Next</a>
         <div>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title;
