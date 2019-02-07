@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 class MainMenu extends Component {
   render() {
@@ -18,8 +18,8 @@ class MainMenu extends Component {
           Blog
         </Link>
       </>
-    );
+    )
   }
 }
 
-export default MainMenu;
+export default MainMenu

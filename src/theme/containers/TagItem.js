@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import media from "../../utils/media";
-import { Colors } from "../variables";
+import styled from 'styled-components'
+import media from '../../utils/media'
+import { Colors } from '../variables'
 
 export const TagItem = styled.span`
   opacity: 0.8;
@@ -8,7 +8,7 @@ export const TagItem = styled.span`
   border-right: 1px solid ${Colors.border};
   margin: 1em;
   padding: 0 1em;
-`;
+`
 
 export const SearchTagItem = styled(TagItem)`
   border: 1px solid ${Colors.code};
@@ -22,7 +22,7 @@ export const SearchTagItem = styled(TagItem)`
   :hover {
     filter: invert(0.9);
     :after {
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       left: 0;
@@ -34,7 +34,7 @@ export const SearchTagItem = styled(TagItem)`
       border-radius: 0.1em;
     }
   }
-`;
+`
 
 export const TagIndex = styled.div`
   display: flex;
@@ -45,8 +45,8 @@ export const TagIndex = styled.div`
     padding-left: 0;
   }
   text-align: center;
-`;
-export const TagWrapper = styled.div``;
+`
+export const TagWrapper = styled.div``
 
 export const NoteTag = styled.div`
   color: ${Colors.h};
@@ -65,7 +65,7 @@ export const NoteTag = styled.div`
     :hover {
       filter: invert(0.9);
       :after {
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         left: 0;
@@ -83,7 +83,7 @@ export const NoteTag = styled.div`
     margin-top: .3em;
     line-height 1.2;
   `};
-`;
+`
 
 export const InlineTag = styled.div`
   display: inline-block;
@@ -94,7 +94,7 @@ export const InlineTag = styled.div`
     // display: block;
     margin-top: .3em;
   `};
-`;
+`
 export const BlogInlineTag = styled(InlineTag)`
   line-height: 1.7;
   color: ${Colors.h};
@@ -107,7 +107,7 @@ export const BlogInlineTag = styled(InlineTag)`
     :hover {
       filter: invert(0.9);
       :after {
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         left: 0;
@@ -120,14 +120,14 @@ export const BlogInlineTag = styled(InlineTag)`
       }
     }
   }
-`;
+`
 
 export const TimeTag = styled(InlineTag)`
   color: ${Colors.h};
   margin-left: 0;
   cursor: default;
   :after {
-    content: "|";
+    content: '|';
     margin-left: 0.7em;
   }
-`;
+`

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import media from "../../utils/media";
+import styled from 'styled-components'
+import media from '../../utils/media'
 
 export default styled.footer`
   font-size: .9em;
@@ -21,4 +21,4 @@ export default styled.footer`
       }
     }
   }
-`;
+`

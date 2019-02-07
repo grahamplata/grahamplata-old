@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../components/layout";
-import project from "../../static/dota.png";
-import Img from "gatsby-image";
-import ReactPlayer from "react-player";
+import React from 'react'
+import Layout from '../components/layout'
+import project from '../../static/dota.png'
+import Img from 'gatsby-image'
+import ReactPlayer from 'react-player'
 
 const Projects = props => (
   <Layout location={props.location}>
@@ -15,18 +15,18 @@ const Projects = props => (
     </div>
     <h2>
       <a
-        style={{ color: "rgba(0, 0, 0, 0.87)" }}
+        style={{ color: 'rgba(0, 0, 0, 0.87)' }}
         href="http://acid-scene.surge.sh/"
       >
         Dota 2 Score Card
       </a>
     </h2>
-    <p style={{ paddingTop: "10px" }}>
+    <p style={{ paddingTop: '10px' }}>
       Inspired by the OpenDota Web UI I created a simple scored card for viewing
       Dota 2 data. This utilizes the OpenDota API, which is also an open source
       project. The purpose was to strengthen my react skills and learn a bit of
       redux along the way. The app provides a bite-sized view of players recent
-      dota stats.{" "}
+      dota stats.{' '}
     </p>
     <div>Much ado about dota</div>
     <p>
@@ -47,13 +47,13 @@ const Projects = props => (
     <small>-- Project Last Updated: June 25, 2018</small>
     <div>
       <h2>2016 Video Reel</h2>
-      <p style={{ paddingTop: "10px" }}>
+      <p style={{ paddingTop: '10px' }}>
         A few years ago I worked for a couple boutique video studios creating
         commercials, music videos and motion graphics. Aside you can find a
         selection of shots from my favorite projects. Since my career switch I
         find myself doing less video content but enjoying it so much more.
       </p>
-      <p style={{ paddingTop: "10px" }}>
+      <p style={{ paddingTop: '10px' }}>
         In the reel you will find clips from:
       </p>
       <ul>
@@ -76,21 +76,21 @@ const Projects = props => (
       </div>
     </div>
   </Layout>
-);
+)
 
 const styles = {
   playerWrapper: {
-    position: "relative",
-    paddingTop: "56.25%"
+    position: 'relative',
+    paddingTop: '56.25%',
   },
   reactPlayer: {
-    position: "absolute",
+    position: 'absolute',
     top: 0,
-    left: 0
+    left: 0,
   },
   spacer: {
-    paddingBottom: "20px"
-  }
-};
+    paddingBottom: '20px',
+  },
+}
 
-export default Projects;
+export default Projects

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Colors } from "../variables";
+import styled from 'styled-components'
+import { Colors } from '../variables'
 
 export default styled.div`
   display: block;
@@ -43,4 +43,4 @@ export default styled.div`
       }
     }
   }
-`;
+`

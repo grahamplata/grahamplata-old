@@ -1,7 +1,7 @@
-import React from "react";
-import Layout from "../components/layout";
-import Img from "gatsby-image";
-import { graphql } from "gatsby";
+import React from 'react'
+import Layout from '../components/layout'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 const About = (props, { data }) => (
   <Layout location={props.location}>
@@ -11,7 +11,7 @@ const About = (props, { data }) => (
     <h3>Where are you currently?</h3>
     <p>
       Currently, I reside in Phoenixville, Pennsylvania working as a Data
-      Support Engineer for{" "}
+      Support Engineer for{' '}
       <a style={styles.syapse} href="https://www.syapse.com/">
         Syapse
       </a>
@@ -51,9 +51,9 @@ const About = (props, { data }) => (
       Pikes Peak in Colorado, USA.
     </p>
   </Layout>
-);
+)
 
-export default About;
+export default About
 
 export const liquidImage = graphql`
   fragment liquidImage on File {
@@ -63,7 +63,7 @@ export const liquidImage = graphql`
       }
     }
   }
-`;
+`
 
 export const pageQuery = graphql`
   query {
@@ -71,16 +71,16 @@ export const pageQuery = graphql`
       ...liquidImage
     }
   }
-`;
+`
 
 const styles = {
   syapse: {
-    color: "#21C2D2",
+    color: '#21C2D2',
     fontWeight: 700,
-    textTransform: "uppercase"
+    textTransform: 'uppercase',
   },
   spacing: {
-    paddingTop: "3em",
-    paddingBottom: "3em"
-  }
-};
+    paddingTop: '3em',
+    paddingBottom: '3em',
+  },
+}

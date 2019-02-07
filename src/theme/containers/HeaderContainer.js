@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Colors } from "../variables";
+import styled from 'styled-components'
+import { Colors } from '../variables'
 
 export default styled.header`
   max-width: 700px;
@@ -49,4 +49,4 @@ export default styled.header`
       }
     }
   }
-`;
+`

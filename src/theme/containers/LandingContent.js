@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import media from "../../utils/media";
+import React from 'react'
+import styled from 'styled-components'
+import media from '../../utils/media'
 
 export default styled.div`
   h2 {
@@ -15,4 +15,4 @@ export default styled.div`
   h2 + h3 {
     margin-top: 0;
   }
-`;
+`

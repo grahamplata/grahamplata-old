@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export default styled.em`
   display: block;
@@ -10,4 +10,4 @@ export default styled.em`
   a {
     border-bottom: 1px dashed;
   }
-`;
+`

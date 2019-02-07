@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Colors } from "../variables";
+import styled from 'styled-components'
+import { Colors } from '../variables'
 
 export default styled.form`
   display: flex;
@@ -45,4 +45,4 @@ export default styled.form`
       opacity: 0.3;
     }
   }
-`;
+`
