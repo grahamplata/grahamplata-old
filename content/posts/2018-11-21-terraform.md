@@ -2,7 +2,7 @@
 path: "/terraform"
 title: "Terraform and Terraform accessories"
 date: "2018-11-21"
-featuredImage: "./terraform.png"
+featuredImage: "../assets/terraform.png"
 author: grahamplata
 excert: "Some reference material for getting started with Terraform on Linode"
 tags: ["terraform", "devops"]

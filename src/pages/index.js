@@ -1,8 +1,7 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import { Container, Grid } from 'semantic-ui-react'
+import React from "react";
+import Layout from "../components/layout";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const IndexPage = () => (
   <StaticQuery
@@ -19,18 +18,10 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <Grid verticalAlign="middle">
-          <Grid.Column>
-            <Grid.Row>
-              <Container>
-                <Img fluid={data.imageOne.childImageSharp.fluid} />
-              </Container>
-            </Grid.Row>
-          </Grid.Column>
-        </Grid>
+        <Img fluid={data.imageOne.childImageSharp.fluid} />
       </Layout>
     )}
   />
-)
+);
 
-export default IndexPage
+export default IndexPage;

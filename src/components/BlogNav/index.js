@@ -1,35 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Button } from 'semantic-ui-react'
+import React from "react";
+import { Link } from "gatsby";
 
 const BlogNav = props => {
-  const { next, prev } = props
-  const isLast = next === false
-  const isFirst = prev === false
+  const { next, prev } = props;
+  const isLast = next === false;
+  const isFirst = prev === false;
   return (
     <>
-      <Button.Group floated="right" compact>
-        {isFirst ? (
-          <Button as={Link} disabled={isFirst}>
-            Prev
-          </Button>
-        ) : (
-          <Button as={Link} to={prev.frontmatter.path}>
-            Prev
-          </Button>
-        )}
-        {isLast ? (
-          <Button as={Link} disabled={isLast}>
-            Next
-          </Button>
-        ) : (
-          <Button as={Link} to={next.frontmatter.path}>
-            Next
-          </Button>
-        )}
-      </Button.Group>
+      <div>
+        {isFirst ? <></> : <Link to={prev.frontmatter.path}>Prev</Link>}
+        {isLast ? <></> : <Link to={next.frontmatter.path}>Next</Link>}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default BlogNav
+export default BlogNav;
