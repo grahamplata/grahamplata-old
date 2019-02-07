@@ -2,7 +2,7 @@
 path: "/memorial-day"
 title: "Memorial Day, Virginia"
 date: "2018-05-28"
-featuredImage: "./GRP_3288.jpg"
+featuredImage: "../assets//GRP_3288.jpg"
 author: grahamplata
 excert: "A little snippet from my happy place."
 tags: ["photos", "blog"]
@@ -18,32 +18,32 @@ The closest markers of convenience are the Walmart and Front Porch Coffee House 
 
 ### Green Heron
 
-![](GRP_3288.jpg)
+![](../assets/GRP_3288.jpg)
 
-![](GRP_3696.jpg)
+![](../assets/GRP_3696.jpg)
 
 ### Friendly Neighborhood Vulture
 
-![](GRP_3419.jpg)
+![](../assets/GRP_3419.jpg)
 
-![](GRP_3450.jpg)
+![](../assets/GRP_3450.jpg)
 
-![](GRP_3472.jpg)
+![](../assets/GRP_3472.jpg)
 
 ### Great Blue Heron
 
-![](21.jpg)
+![](../assets/21.jpg)
 
-![](GRP_3960.jpg)
+![](../assets/GRP_3960.jpg)
 
-![](GRP_3992.jpg)
+![](../assets/GRP_3992.jpg)
 
-![](GRP_4192.jpg)
+![](../assets/GRP_4192.jpg)
 
 ### Bald Eagle
 
-![](GRP_4113.jpg)
+![](../assets/GRP_4113.jpg)
 
-![](GRP_4237.jpg)
+![](../assets/GRP_4237.jpg)
 
-![](GRP_3751.jpg)
+![](../assets/GRP_3751.jpg)
