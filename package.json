@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Graham Plata <graham.plata@gmail.com>",
   "dependencies": {
-    "exif-js": "^2.3.0",
     "gatsby": "^2.0.91",
     "gatsby-cli": "^2.4.8",
     "gatsby-codemods": "^1.0.8",
@@ -39,8 +38,7 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve public/",
-    "docker": "gatsby build && docker build --rm -f Dockerfile -t grahamplata/gatsby ."
+    "start": "serve public/"
   },
   "devDependencies": {
     "prettier": "^1.15.3"
