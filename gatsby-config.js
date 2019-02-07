@@ -15,14 +15,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/content/posts`,
         name: `posts`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/content/assets/`,
         name: `images`
       }
     },
@@ -60,7 +60,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "src/images/logo.png"
+        icon: "static/logo.png"
       }
     },
     {

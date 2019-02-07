@@ -1,6 +1,6 @@
 import React from 'react'
 import { Divider, Image, Grid, Header, Segment } from 'semantic-ui-react'
-import project from '../images/dota.png'
+import project from '../../static/dota.png'
 
 const DotaStats = () => (
   <div>
