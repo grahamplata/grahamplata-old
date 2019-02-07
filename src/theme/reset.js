@@ -1,4 +1,4 @@
-import { Colors, Fonts } from "theme/variables";
+import { Colors, Fonts } from "./variables";
 
 export default `
   * {

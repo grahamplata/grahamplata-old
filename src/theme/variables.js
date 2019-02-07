@@ -1,4 +1,4 @@
-import changeColor from "utils/changeColor";
+import changeColor from "../utils/changeColor";
 
 const h = "hsla(0, 0%, 0%, 1)";
 const background = "hsla(0, 0%, 100%, 1)";

@@ -1,4 +1,4 @@
-import { Colors } from "theme/variables";
+import { Colors } from "./variables";
 
 export default `
   position: fixed;

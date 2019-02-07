@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import resets from "theme/reset";
-import typography from "theme/typography";
-import prism from "theme/prism";
-import background from "theme/background";
+import resets from "./reset";
+import typography from "./typography";
+import prism from "./prism";
+import background from "./background";
 
 export default createGlobalStyle`
   ${resets}
