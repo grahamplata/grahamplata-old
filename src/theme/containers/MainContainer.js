@@ -11,7 +11,7 @@ export default styled.main`
     margin-top: 0;
   }
   h2 + h3 {
-    margin-top: 0;
+    // margin-top: 0;
   }
   // lists
   ul,

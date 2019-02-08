@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
 import Layout from '../components/layout'
-import Header from '../components/Header'
 import MainContainer from '../theme/containers/MainContainer'
 
 const BlogPost = ({ data }) => {
@@ -20,7 +19,10 @@ const BlogPost = ({ data }) => {
         }
         keywords={['blog', 'grahamplata']}
       />
-      <Header title={title} subtitle={date} />
+      <>
+        <h2>{title}</h2>
+        <small>{date}</small>
+      </>
       <MainContainer dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )

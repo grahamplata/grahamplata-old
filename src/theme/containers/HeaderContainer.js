@@ -4,13 +4,12 @@ import { Colors } from '../variables'
 export default styled.header`
   max-width: 700px;
   margin-top: 10px;
-  margin-bottom: 150px;
   text-align: left;
   @media screen and (min-width: 1600px) {
-    margin-bottom: 200px;
+    margin-bottom: 10px;
   }
   @media screen and (max-width: 700px) {
-    // text-align: center;
+    text-align: center;
   }
   @media screen and (max-width: 440px) {
     display: flex;
