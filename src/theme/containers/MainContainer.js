@@ -3,15 +3,8 @@ import { Colors, Fonts } from '../variables'
 import media from '../../utils/media'
 
 export default styled.main`
-  p {
-    max-width: 650px;
-    margin-left: 0;
-  }
   > *:first-child {
     margin-top: 0;
-  }
-  h2 + h3 {
-    // margin-top: 0;
   }
   // lists
   ul,
@@ -88,7 +81,6 @@ export default styled.main`
   pre {
     font-size: 0.85em;
     color: ${Colors.p};
-    padding: 0 1em 0;
     border-left: 2px solid ${Colors.border};
     margin-bottom: 2em;
     overflow-x: auto;
