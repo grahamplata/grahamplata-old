@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import ReactPlayer from 'react-player'
 
+import Seo from '../components/Seo'
 import Layout from '../components/layout'
 
 const styles = {
@@ -32,6 +33,7 @@ const Projects = (props, { data }) => (
     `}
     render={data => (
       <Layout>
+        <Seo title="Projects" keywords={['blog', 'projects', 'grahamplata']} />
         <h2>Projects</h2>
         <Img
           fluid={data.dotaTwo.childImageSharp.fluid}

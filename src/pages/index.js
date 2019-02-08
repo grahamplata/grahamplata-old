@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/Seo'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -18,6 +19,7 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
+        <Seo title="Home" keywords={['blog', 'portfolio', 'grahamplata']} />
         <Img fluid={data.indexImage.childImageSharp.fluid} />
       </Layout>
     )}

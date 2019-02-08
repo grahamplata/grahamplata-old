@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/Seo'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -18,6 +19,7 @@ const About = () => (
     `}
     render={data => (
       <Layout>
+        <Seo title="About" keywords={['blog', 'about', 'grahamplata']} />
         <h2>About</h2>
         <Img fluid={data.aboutImage.childImageSharp.fluid} />
         <h2>Learn more about me</h2>

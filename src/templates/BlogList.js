@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import Seo from '../components/Seo'
 import { BlogContainer } from '../theme/containers/BlogPostsContaners'
 
 const BlogList = (props, { data }) => (
@@ -33,6 +34,7 @@ const BlogList = (props, { data }) => (
     `}
     render={data => (
       <Layout>
+        <Seo title="Blog" keywords={['blog', 'grahamplata']} />
         <h2>Blog</h2>
         <BlogContainer>
           <ul>
