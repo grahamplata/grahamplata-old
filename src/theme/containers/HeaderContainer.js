@@ -3,7 +3,7 @@ import { Colors } from '../variables'
 
 export default styled.header`
   max-width: 700px;
-  margin-top: 150px;
+  margin-top: 10px;
   margin-bottom: 150px;
   text-align: left;
   @media screen and (min-width: 1600px) {
@@ -21,9 +21,9 @@ export default styled.header`
     min-height: 92vh;
   }
   div {
-    h1 {
+    h3 {
       letter-spacing: .01em;
-      font-size: 2.7em;
+      font-size: 1.7em;
       margin-top: 0em;
       margin-bottom: 0;
       @media screen and (max-width: 440px) {
