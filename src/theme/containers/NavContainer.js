@@ -3,10 +3,11 @@ import { Colors } from '../variables'
 
 export default styled.div`
   display: block;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  margin-top: 15px;
   ul {
     overflow: auto;
     li:first-child {
@@ -29,12 +30,11 @@ export default styled.div`
         color: ${Colors.h};
         text-decoration: none;
         display: block;
-        // line-height: 1.9;
         transition: opacity 0.5s ease-in;
         :hover,
         :active,
         :focus {
-          filter: invert(40%);
+          filter: invert(70%);
         }
         &.${props => props.activeClassName} {
         }
