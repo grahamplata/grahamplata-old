@@ -8,15 +8,12 @@ import Layout from '../components/layout'
 const styles = {
   playerWrapper: {
     position: 'relative',
-    paddingTop: '56.25%',
+    paddingTop: '53.25%',
   },
   reactPlayer: {
     position: 'absolute',
     top: 0,
     left: 0,
-  },
-  spacer: {
-    paddingBottom: '20px',
   },
 }
 
@@ -34,7 +31,7 @@ const Projects = (props, { data }) => (
       }
     `}
     render={data => (
-      <Layout location={props.location}>
+      <Layout>
         <h2>Projects</h2>
         <Img
           fluid={data.dotaTwo.childImageSharp.fluid}
@@ -54,7 +51,7 @@ const Projects = (props, { data }) => (
             Dota 2 Score Card
           </a>
         </h2>
-        <p style={{ paddingTop: '10px' }}>
+        <p>
           Inspired by the OpenDota Web UI I created a simple scored card for
           viewing Dota 2 data. This utilizes the OpenDota API, which is also an
           open source project. The purpose was to strengthen my react skills and
@@ -77,28 +74,8 @@ const Projects = (props, { data }) => (
           together when we departed for college. 10 years later we are still
           going strong. It's amazing how far the game has come.
         </p>
-        <small>-- Project Last Updated: June 25, 2018</small>
         <div>
           <h2>2016 Video Reel</h2>
-          <p style={{ paddingTop: '10px' }}>
-            A few years ago I worked for a couple boutique video studios
-            creating commercials, music videos and motion graphics. Aside you
-            can find a selection of shots from my favorite projects. Since my
-            career switch I find myself doing less video content but enjoying it
-            so much more.
-          </p>
-          <p style={{ paddingTop: '10px' }}>
-            In the reel you will find clips from:
-          </p>
-          <ul>
-            <li>A camera product highlight</li>
-            <li>A bowling short</li>
-            <li>A rock opera</li>
-            <li>A rockabilly festival</li>
-            <li>A spec medical piece</li>
-            <li>A corporate drivers clinic</li>
-          </ul>
-          <small>-- Reel Last Updated: 2016</small>
           <div style={styles.playerWrapper}>
             <ReactPlayer
               style={styles.reactPlayer}
@@ -108,6 +85,22 @@ const Projects = (props, { data }) => (
               muted
             />
           </div>
+          <p>
+            A few years ago I worked for a couple boutique video studios
+            creating commercials, music videos and motion graphics. Aside you
+            can find a selection of shots from my favorite projects. Since my
+            career switch I find myself doing less video content but enjoying it
+            so much more.
+          </p>
+          <p>In the reel you will find clips from:</p>
+          <ul>
+            <li>A camera product highlight</li>
+            <li>A bowling short</li>
+            <li>A rock opera</li>
+            <li>A rockabilly festival</li>
+            <li>A spec medical piece</li>
+            <li>A corporate drivers clinic</li>
+          </ul>
         </div>
       </Layout>
     )}
