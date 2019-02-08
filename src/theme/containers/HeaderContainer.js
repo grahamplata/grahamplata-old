@@ -7,7 +7,6 @@ export default styled.header`
   margin-bottom: 150px;
   text-align: left;
   @media screen and (min-width: 1600px) {
-    margin-top: 200px;
     margin-bottom: 200px;
   }
   @media screen and (max-width: 700px) {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
+import { BlogContainer } from '../theme/containers/BlogPostsContaners'
 import { Link, graphql } from 'gatsby'
 
 export default class BlogList extends Component {
@@ -8,25 +9,27 @@ export default class BlogList extends Component {
     return (
       <Layout>
         <h2>Blog</h2>
-        <ul>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title
-            const path = node.frontmatter.path
-            const date = node.frontmatter.date
-            const excert = node.frontmatter.excert
-            return (
-              <li>
-                <Link to={path}>
-                  <b>{title}</b>
-                </Link>{' '}
-                - <small>{date}</small>
-                <p>
-                  <small>{excert}</small>
-                </p>
-              </li>
-            )
-          })}
-        </ul>
+        <BlogContainer>
+          <ul>
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title
+              const path = node.frontmatter.path
+              const date = node.frontmatter.date
+              const excert = node.frontmatter.excert
+              return (
+                <li>
+                  <Link to={path}>
+                    <b>{title}</b>
+                  </Link>{' '}
+                  - <small>{date}</small>
+                  <p>
+                    <small>{excert}</small>
+                  </p>
+                </li>
+              )
+            })}
+          </ul>
+        </BlogContainer>
       </Layout>
     )
   }

@@ -17,10 +17,6 @@ const Base = styled.div`
   }
 `
 
-const Wrapper = styled.div`
-  background-color: red;
-`
-
 export const NoteContainer = styled(Base)`
   p {
     cursor: default;
@@ -33,7 +29,9 @@ export const BlogContainer = styled(Base)`
     cursor: default;
     text-size-adjust: 100%;
     padding-bottom: 0.8em;
-    // border-bottom: 1px solid #f2f2f2;
+  }
+  li {
+    list-style-type: none;
   }
 `
 
