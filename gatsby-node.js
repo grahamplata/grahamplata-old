@@ -35,15 +35,9 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(({ node }, index) => {
-      const prev = index === 0 ? false : posts[index - 1].node;
-      const next = index === posts.length - 1 ? false : posts[index + 1].node;
       createPage({
         path: node.frontmatter.path,
-        component: postTemplate,
-        context: {
-          prev,
-          next
-        }
+        component: postTemplate
       });
     });
 
@@ -53,13 +47,7 @@ exports.createPages = ({ actions, graphql }) => {
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-        component: path.resolve("./src/templates/BlogList.js"),
-        context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          numPages,
-          currentPage: i + 1
-        }
+        component: path.resolve("./src/templates/BlogList.js")
       });
     });
   });
