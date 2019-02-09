@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
 import Layout from '../components/layout'
-import MainContainer from '../theme/containers/MainContainer'
+import { BlogContainer } from '../theme/containers/BlogPostsContaners'
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
@@ -23,7 +23,7 @@ const BlogPost = ({ data }) => {
         <h2>{title}</h2>
         <small>{date}</small>
       </>
-      <MainContainer dangerouslySetInnerHTML={{ __html: html }} />
+      <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }

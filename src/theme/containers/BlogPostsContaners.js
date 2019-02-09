@@ -19,7 +19,7 @@ const Base = styled.div`
 export const BlogContainer = styled(Base)`
   p {
     cursor: default;
-    // text-size-adjust: 100%;
+    text-size-adjust: 100%;
     padding-bottom: 0.8em;
   }
   li {
