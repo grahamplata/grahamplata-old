@@ -55,10 +55,10 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Graham Plata",
-        short_name: "SWang",
+        short_name: "GPlata",
         start_url: "/",
         background_color: "#ffffff",
-        theme_color: "#663399",
+        theme_color: "#21C2D2",
         display: "minimal-ui",
         icon: "static/logo.png"
       }
