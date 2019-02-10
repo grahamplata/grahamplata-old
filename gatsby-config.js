@@ -1,20 +1,28 @@
 module.exports = {
   siteMetadata: {
-    title: "Graham Plata's | Digital Sandbox"
+    title: "Graham Plata's Digital Sandbox",
+    author: "Graham Plata",
+    siteName: "grahamplata.com",
+    bio: "A skill collector",
+    siteUrl: "https://grahamplata.com/",
+    github: "https://github.com/grahamplata",
+    twitter: "https://twitter.com/grahamplata",
+    linkedin: "https://www.linkedin.com/in/grahamplata",
+    homeCity: "Philadelphia",
+    description: "Graham Plata's Digital Sandbox"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/content/posts`,
         name: `posts`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/content/assets/`,
         name: `images`
       }
     },
@@ -27,7 +35,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1200
+              maxWidth: 590
             }
           },
           {
@@ -44,6 +52,18 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Graham Plata",
+        short_name: "GPlata",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#21C2D2",
+        display: "minimal-ui",
+        icon: "static/logo.png"
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-11254643-2",
@@ -51,6 +71,8 @@ module.exports = {
         anonymize: true,
         respectDNT: true
       }
-    }
+    },
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet"
   ]
 };

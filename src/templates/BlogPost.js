@@ -1,31 +1,29 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Header, Container, Grid } from 'semantic-ui-react'
+import Seo from '../components/Seo'
 import Layout from '../components/layout'
-import BlogNav from '../components/BlogNav'
+import { BlogContainer } from '../theme/containers/BlogPostsContaners'
 
-const BlogPost = ({ data, pageContext }) => {
+const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
-  const { title, date } = frontmatter
-  const { next, prev } = pageContext
+  const { title, date, path } = frontmatter
   return (
     <Layout>
-      <BlogNav next={next} prev={prev} />
-      <Header as="h2" textAlign="left">
-        {title}
-        <Header.Subheader>{date}</Header.Subheader>
-      </Header>
-      <Container>
-        <Grid>
-          <Grid.Column>
-            <Grid.Column>
-              <Container text dangerouslySetInnerHTML={{ __html: html }} />
-            </Grid.Column>
-            <BlogNav next={next} prev={prev} />
-          </Grid.Column>
-        </Grid>
-      </Container>
+      <Seo
+        title={
+          path
+            .substr(1)
+            .charAt(0)
+            .toUpperCase() + path.slice(2)
+        }
+        keywords={['blog', 'grahamplata']}
+      />
+      <>
+        <h2>{title}</h2>
+        <small>{date}</small>
+      </>
+      <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }
