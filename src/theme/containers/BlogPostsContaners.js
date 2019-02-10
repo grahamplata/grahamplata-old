@@ -8,11 +8,8 @@ const Base = styled.div`
   h3 {
     font-weight: 600;
     font-size: 1.324rem !important;
-    margin-top: 0.5em;
+    margin-top: 0.1em;
     text-size-adjust: 100%;
-  }
-  h3:nth-last-child(2) {
-    margin-bottom: 0.8em;
   }
 `
 
@@ -20,7 +17,10 @@ export const BlogContainer = styled(Base)`
   p {
     cursor: default;
     text-size-adjust: 100%;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.1em;
+  }
+  ul {
+    margin-left: 20px;
   }
   li {
     list-style-type: none;
