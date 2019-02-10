@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react'
+import { Link } from 'gatsby'
 
 const BlogNav = props => {
-  const { next, prev } = props;
-  const isLast = next === false;
-  const isFirst = prev === false;
+  const { next, prev } = props
+  const isLast = next === false
+  const isFirst = prev === false
   return (
     <>
       <div>
@@ -12,7 +12,7 @@ const BlogNav = props => {
         {isLast ? <></> : <Link to={next.frontmatter.path}>Next</Link>}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BlogNav;
+export default BlogNav

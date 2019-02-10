@@ -1,13 +1,14 @@
-import React from "react";
-import Layout from "../components/layout";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react'
+import Layout from '../components/layout'
+import Seo from '../components/Seo'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
       {
-        imageOne: file(relativePath: { eq: "gp.JPG" }) {
+        indexImage: file(relativePath: { eq: "gp.JPG" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
@@ -18,10 +19,11 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <Img fluid={data.imageOne.childImageSharp.fluid} />
+        <Seo title="Home" keywords={['blog', 'portfolio', 'grahamplata']} />
+        <Img fluid={data.indexImage.childImageSharp.fluid} />
       </Layout>
     )}
   />
-);
+)
 
-export default IndexPage;
+export default IndexPage

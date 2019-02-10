@@ -1,95 +1,65 @@
-import React from "react";
-import Layout from "../components/layout";
-import { Link, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
-export default class BlogList extends React.Component {
-  render() {
-    const posts = this.props.data.allMarkdownRemark.edges;
-    const { currentPage, numPages } = this.props.pageContext;
-    const isFirst = currentPage === 1;
-    // const isLast = currentPage === numPages;
-    const prevPage =
-      currentPage - 1 === 1 ? "blog/" : `blog/${currentPage - 1}`.toString();
-    const nextPage = `blog/${currentPage + 1}`.toString();
-    return (
-      <Layout>
-        <h2>Blog</h2>
-        <Link as={Link} to={prevPage} disabled={isFirst}>
-          Prev
-        </Link>
-        {Array.from({ length: numPages }, (_, i) => (
-          <Link
-            active={currentPage === i + 1}
-            as={Link}
-            to={`blog/${i === 0 ? "" : i + 1}`}
-            key={i}
-          >
-            {i + 1}
-          </Link>
-        ))}
-        <a href={nextPage}>Next</a>
-        <div>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title;
-            const path = node.frontmatter.path;
-            const date = node.frontmatter.date;
-            const excert = node.frontmatter.excert;
-            const tags = node.frontmatter.tags;
-            return (
-              <div key={title}>
-                <Img
-                  fluid={
-                    node.frontmatter.featuredImage.childImageSharp.sizes.src
+import Layout from '../components/layout'
+import Seo from '../components/Seo'
+import { BlogContainer } from '../theme/containers/BlogPostsContaners'
+
+const BlogList = (props, { data }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+                path
+                date(formatString: "MMMM DD, YYYY")
+                excert
+                tags
+                featuredImage {
+                  childImageSharp {
+                    sizes(maxWidth: 550) {
+                      ...GatsbyImageSharpSizes
+                    }
                   }
-                />
-                <Link to={path}>
-                  <h2>{title}</h2>
-                </Link>
-                <p>{date}</p>
-                <p>{excert}</p>
-                {tags.map(tag => {
-                  return (
-                    <p size="mini" key={tag}>
-                      {tag}
-                    </p>
-                  );
-                })}
-              </div>
-            );
-          })}
-        </div>
-      </Layout>
-    );
-  }
-}
-
-export const blogListQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            path
-            date(formatString: "MMMM DD, YYYY")
-            excert
-            tags
-            featuredImage {
-              childImageSharp {
-                sizes(maxWidth: 550) {
-                  ...GatsbyImageSharpSizes
                 }
               }
             }
           }
         }
       }
-    }
-  }
-`;
+    `}
+    render={data => (
+      <Layout>
+        <Seo title="Blog" keywords={['blog', 'grahamplata']} />
+        <h2>Blog</h2>
+        <BlogContainer>
+          <ul>
+            {data.allMarkdownRemark.edges.map(({ node }) => {
+              const title = node.frontmatter.title
+              const date = node.frontmatter.date
+              const path = node.frontmatter.path
+              const excert = node.frontmatter.title
+              return (
+                <li key={node.id}>
+                  <Link to={path}>
+                    <b>{title}</b>
+                  </Link>{' '}
+                  - <small>{date}</small>
+                  <p>
+                    <small>{excert}</small>
+                  </p>
+                </li>
+              )
+            })}
+          </ul>
+        </BlogContainer>
+      </Layout>
+    )}
+  />
+)
+
+export default BlogList

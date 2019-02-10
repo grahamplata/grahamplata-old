@@ -1,14 +1,16 @@
-import React from "react";
-import Helmet from "react-helmet";
-import MainMenu from "../components/MainMenu";
-import Footer from "../components/Footer";
-import meta from "./meta";
+import React from 'react'
+import GlobalStyle from '../theme/global'
+import BodyContainer from '../theme/containers/BodyContainer'
+import NavigationMenu from '../components/NavigationMenu'
+import Footer from '../components/Footer'
 
 export default ({ children }) => (
-  <div style={{ margin: "1em 0em 0em", padding: "1em 0em" }}>
-    <Helmet title="Graham Plata's Digital Sandbox" meta={meta} />
-    <MainMenu />
-    {children}
-    <Footer />
-  </div>
-);
+  <>
+    <GlobalStyle />
+    <BodyContainer>
+      <NavigationMenu />
+      {children}
+      <Footer />
+    </BodyContainer>
+  </>
+)

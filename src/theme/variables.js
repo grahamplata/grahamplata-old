@@ -1,8 +1,8 @@
-import changeColor from "utils/changeColor";
+import changeColor from '../utils/changeColor'
 
-const h = "hsla(0, 0%, 0%, 1)";
-const background = "hsla(0, 0%, 100%, 1)";
-const linkHover = "hsla(192, 100%, 50%, 1)";
+const h = 'hsla(0, 0%, 0%, 1)'
+const background = 'hsla(0, 0%, 100%, 1)'
+const linkHover = 'hsla(192, 100%, 50%, 1)'
 
 export const Colors = {
   h,
@@ -12,11 +12,11 @@ export const Colors = {
   background,
   linkHover,
   link: changeColor(h, 0.35),
-  subNav: changeColor(h, 0.2)
-};
+  subNav: changeColor(h, 0.2),
+}
 
 export const Fonts = {
   basic:
     '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, Georgia, serif, sans-serif',
-  code: "'Source Code Pro', monospace"
-};
+  code: "'Source Code Pro', monospace",
+}
