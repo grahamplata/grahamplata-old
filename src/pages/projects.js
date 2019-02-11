@@ -22,8 +22,8 @@ const Projects = (props, { data }) => (
     render={data => (
       <Layout>
         <Seo title="Projects" keywords={['blog', 'projects', 'grahamplata']} />
-        <h2>Projects</h2>
         <PageContainer>
+          <h2>Projects</h2>
           <Img
             fluid={data.dotaTwo.childImageSharp.fluid}
             href="http://acid-scene.surge.sh/"

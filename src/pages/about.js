@@ -21,8 +21,8 @@ const About = () => (
     render={data => (
       <Layout>
         <Seo title="About" keywords={['blog', 'about', 'grahamplata']} />
-        <h2>About</h2>
         <PageContainer>
+          <h2>About</h2>
           <h3>Where are you currently?</h3>
           <p>
             Currently, I reside in Phoenixville, Pennsylvania working as a Data

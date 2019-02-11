@@ -7,6 +7,7 @@ export const PageContainer = styled.div`
     padding-bottom: 0.1em;
   }
   ul {
+    list-style-type: none;
     margin-left: 20px;
   }
   li {

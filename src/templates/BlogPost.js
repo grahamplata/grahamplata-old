@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
 import Layout from '../components/layout'
 import { BlogContainer } from '../theme/containers/BlogPostsContaners'
+import { PageContainer } from '../theme/containers/PageContainer'
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
@@ -19,11 +20,13 @@ const BlogPost = ({ data }) => {
         }
         keywords={['blog', 'grahamplata']}
       />
-      <>
-        <h2>{title}</h2>
-        <small>{date}</small>
-      </>
-      <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
+      <PageContainer>
+        <>
+          <h2>{title}</h2>
+          <small>{date}</small>
+        </>
+        <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
+      </PageContainer>
     </Layout>
   )
 }
