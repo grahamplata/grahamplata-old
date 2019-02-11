@@ -18,7 +18,7 @@ export default styled.main`
       line-height: 1.6;
     }
     li::before {
-      content: '•';
+      // content: '•';
       opacity: 1;
       margin-right: 0.5em;
       margin-left: -0.55em;

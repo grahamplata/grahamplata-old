@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
-import { BlogContainer } from '../theme/containers/BlogPostsContaners'
+import { PageContainer } from '../theme/containers/PageContainer'
 
 const BlogList = (props, { data }) => (
   <StaticQuery
@@ -35,8 +35,8 @@ const BlogList = (props, { data }) => (
     render={data => (
       <Layout>
         <Seo title="Blog" keywords={['blog', 'grahamplata']} />
-        <h2>Blog</h2>
-        <BlogContainer>
+        <PageContainer>
+          <h2>Blog</h2>
           <ul>
             {data.allMarkdownRemark.edges.map(({ node }) => {
               const title = node.frontmatter.title
@@ -56,7 +56,7 @@ const BlogList = (props, { data }) => (
               )
             })}
           </ul>
-        </BlogContainer>
+        </PageContainer>
       </Layout>
     )}
   />

@@ -1,8 +1,10 @@
 import React from 'react'
-import Layout from '../components/layout'
-import Seo from '../components/Seo'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+
+import Seo from '../components/Seo'
+import Layout from '../components/layout'
+import { PageContainer } from '../theme/containers/PageContainer'
 
 const IndexPage = () => (
   <StaticQuery
@@ -20,7 +22,9 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <Seo title="Home" keywords={['blog', 'portfolio', 'grahamplata']} />
-        <Img fluid={data.indexImage.childImageSharp.fluid} />
+        <PageContainer>
+          <Img fluid={data.indexImage.childImageSharp.fluid} />
+        </PageContainer>
       </Layout>
     )}
   />
