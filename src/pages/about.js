@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
-import { BlogContainer } from '../theme/containers/BlogPostsContaners'
+import { PageContainer } from '../theme/containers/PageContainer'
 
 const About = () => (
   <StaticQuery
@@ -22,7 +22,7 @@ const About = () => (
       <Layout>
         <Seo title="About" keywords={['blog', 'about', 'grahamplata']} />
         <h2>About</h2>
-        <BlogContainer>
+        <PageContainer>
           <h3>Where are you currently?</h3>
           <p>
             Currently, I reside in Phoenixville, Pennsylvania working as a Data
@@ -82,7 +82,7 @@ const About = () => (
               </p>
             </li>
           </ul>
-        </BlogContainer>
+        </PageContainer>
       </Layout>
     )}
   />
