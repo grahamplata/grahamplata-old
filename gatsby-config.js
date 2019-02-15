@@ -8,6 +8,8 @@ module.exports = {
     github: "https://github.com/grahamplata",
     twitter: "https://twitter.com/grahamplata",
     linkedin: "https://www.linkedin.com/in/grahamplata",
+    keybase: "https://keybase.io/grahamplata",
+    instagram: "https://instagram.com/grahamplata",
     homeCity: "Philadelphia",
     description: "Graham Plata's Digital Sandbox"
   },

@@ -9,6 +9,8 @@ const footerQuery = graphql`
         github
         twitter
         linkedin
+        keybase
+        instagram
       }
     }
   }
