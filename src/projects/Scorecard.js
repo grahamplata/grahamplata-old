@@ -17,10 +17,12 @@ const Scorecard = props => (
     `}
     render={data => (
       <>
-        <Img
-          fluid={data.dotaTwo.childImageSharp.fluid}
-          href="http://acid-scene.surge.sh/"
-        />
+        <a href="http://acid-scene.surge.sh/">
+          <Img
+            fluid={data.dotaTwo.childImageSharp.fluid}
+            href="http://acid-scene.surge.sh/"
+          />
+        </a>
         <div style={{ paddingTop: '5px' }}>
           <p>
             A score Card that displays a short synopsis of a player's overall
