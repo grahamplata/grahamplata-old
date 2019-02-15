@@ -42,7 +42,7 @@ const BlogList = (props, { data }) => (
               const title = node.frontmatter.title
               const date = node.frontmatter.date
               const path = node.frontmatter.path
-              const excert = node.frontmatter.title
+              const excert = node.frontmatter.excert
               return (
                 <li key={node.id}>
                   <Link to={path}>
