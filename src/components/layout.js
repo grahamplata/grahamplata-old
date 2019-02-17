@@ -4,14 +4,17 @@ import BodyContainer from '../theme/containers/BodyContainer'
 import NavigationMenu from './NavigationMenu'
 import MainContainer from '../theme/containers/MainContainer'
 import Footer from './Footer'
+import DotGrid from '../theme/containers/DotGrid'
 
 export default ({ children }) => (
   <>
     <GlobalStyle />
-    <BodyContainer>
-      <NavigationMenu />
-      <MainContainer>{children}</MainContainer>
-      <Footer />
-    </BodyContainer>
+    <DotGrid>
+      <BodyContainer>
+        <NavigationMenu />
+        <MainContainer>{children}</MainContainer>
+        <Footer />
+      </BodyContainer>
+    </DotGrid>
   </>
 )
