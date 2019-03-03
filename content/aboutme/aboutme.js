@@ -7,7 +7,6 @@ export const skills = [
     skill: "Spirited Driving",
     description: "I want to learn to Drift or Autocross."
   },
-  { skill: "Group Riding", description: "Long distance Cycling Rides" },
   { skill: "Go", description: 'fmt.Println("Hello, Go")' }
 ];
 
