@@ -5,7 +5,6 @@ Find it here: `grahamplata.com`
 Built With:
 * [React](https://www.reactjs.org/) - Component-Based JavaScript library for building user interfaces
 * [Gatsby v2](https://www.gatsbyjs.org/) - Static Website Generator
-* [Semantic UI](https://react.semantic-ui.com) Responsive layouts using human-friendly HTML.
 
 Default Commands:
 
