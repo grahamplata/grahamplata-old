@@ -1,6 +1,6 @@
 ---
 path: "/terraform"
-title: "Terraform and Terraform accessories"
+title: "🌎 Terraform and Terraform accessories"
 date: "2018-11-21"
 featuredImage: "../assets/terraform.png"
 author: grahamplata

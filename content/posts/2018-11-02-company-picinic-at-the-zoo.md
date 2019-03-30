@@ -1,6 +1,6 @@
 ---
 path: "/syapse-zoo"
-title: "Photos from the Elmwood Park Zoo"
+title: "🦅 Photos from the Elmwood Park Zoo"
 date: "2018-11-02"
 featuredImage: "../assets/GRP_4699.JPG"
 author: grahamplata

@@ -1,6 +1,6 @@
 ---
 path: "/memorial-day"
-title: "Memorial Day, Weems Virginia"
+title: "🚤 Memorial Day, Weems Virginia"
 date: "2018-05-28"
 featuredImage: "../assets//GRP_3288.jpg"
 author: grahamplata

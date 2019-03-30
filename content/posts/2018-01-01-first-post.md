@@ -1,6 +1,6 @@
 ---
 path: "/hello-world"
-title: "Starting a blog... again!"
+title: "🤔 Starting a blog... again!"
 date: "2018-01-01"
 author: grahamplata
 excert: "My attempt at keeping a blog again."
