@@ -23,7 +23,7 @@ const IndexPage = () => (
       <Layout>
         <Seo title="Home" keywords={["blog", "portfolio", "grahamplata"]} />
         <PageContainer>
-          <h2 />
+          <h2>Welcome to my Digital Sandbox.</h2>
           <Img fluid={data.indexImage.childImageSharp.fluid} />
         </PageContainer>
       </Layout>

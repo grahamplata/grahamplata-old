@@ -1,9 +1,10 @@
-import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import Layout from '../components/layout'
-import Seo from '../components/Seo'
-import { PageContainer } from '../theme/containers/PageContainer'
+import Layout from "../components/layout";
+import BlogItem from "../components/BlogItem";
+import Seo from "../components/Seo";
+import { PageContainer } from "../theme/containers/PageContainer";
 
 const BlogList = (props, { data }) => (
   <StaticQuery
@@ -34,32 +35,28 @@ const BlogList = (props, { data }) => (
     `}
     render={data => (
       <Layout>
-        <Seo title="Blog" keywords={['blog', 'grahamplata']} />
+        <Seo title="Blog" keywords={["blog", "grahamplata"]} />
         <PageContainer>
           <h2>Blog</h2>
-          <ul>
+          <div>
             {data.allMarkdownRemark.edges.map(({ node }) => {
-              const title = node.frontmatter.title
-              const date = node.frontmatter.date
-              const path = node.frontmatter.path
-              const excert = node.frontmatter.excert
+              const { title, tags, date, path, excert } = node.frontmatter;
               return (
-                <li key={node.id}>
-                  <Link to={path}>
-                    <b>{title}</b>
-                  </Link>{' '}
-                  - <small>{date}</small>
-                  <p>
-                    <small>{excert}</small>
-                  </p>
-                </li>
-              )
+                <BlogItem
+                  key={node.id}
+                  title={title}
+                  tags={tags}
+                  date={date}
+                  path={path}
+                  excert={excert}
+                />
+              );
             })}
-          </ul>
+          </div>
         </PageContainer>
       </Layout>
     )}
   />
-)
+);
 
-export default BlogList
+export default BlogList;
