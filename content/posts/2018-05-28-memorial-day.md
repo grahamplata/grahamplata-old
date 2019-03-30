@@ -1,14 +1,12 @@
 ---
 path: "/memorial-day"
-title: "Memorial Day, Virginia"
+title: "Memorial Day, Weems Virginia"
 date: "2018-05-28"
 featuredImage: "../assets//GRP_3288.jpg"
 author: grahamplata
 excert: "A little snippet from my happy place."
 tags: ["photos", "blog"]
 ---
-
-# Wildlife of Weems
 
 ![](../assets/12.jpg)
 
