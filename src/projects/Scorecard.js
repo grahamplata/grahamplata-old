@@ -1,6 +1,6 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import Img from "gatsby-image";
+import { StaticQuery, graphql } from "gatsby";
 
 const Scorecard = props => (
   <StaticQuery
@@ -23,7 +23,7 @@ const Scorecard = props => (
             href="http://acid-scene.surge.sh/"
           />
         </a>
-        <div style={{ paddingTop: '5px' }}>
+        <div style={{ paddingTop: "5px" }}>
           <p>
             A score Card that displays a short synopsis of a player's overall
             performance. The Card utilizes React, Redux and stats provided by
@@ -32,7 +32,7 @@ const Scorecard = props => (
         </div>
         <h3>
           <a
-            style={{ color: 'rgba(0, 0, 0, 0.87)' }}
+            style={{ color: "rgba(0, 0, 0, 0.87)" }}
             href="http://acid-scene.surge.sh/"
           >
             Dota 2 Score Card
@@ -44,7 +44,7 @@ const Scorecard = props => (
             viewing Dota 2 data. This utilizes the OpenDota API, which is also
             an open source project. The purpose was to strengthen my react
             skills and learn a bit of redux along the way. The app provides a
-            bite-sized view of players recent dota stats.{' '}
+            bite-sized view of players recent dota stats.{" "}
           </p>
           <p>
             <i>
@@ -68,6 +68,6 @@ const Scorecard = props => (
       </>
     )}
   />
-)
+);
 
-export default Scorecard
+export default Scorecard;

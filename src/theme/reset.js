@@ -1,4 +1,4 @@
-import { Colors, Fonts } from './variables'
+import { Colors, Fonts } from "./variables";
 
 export default `
   * {
@@ -55,10 +55,6 @@ export default `
   img {
     width: 100%;
   }
-  .gatsby-resp-image-wrapper {
-    z-index: 10;
-    margin: 0!important;
-  }
   input {
     background: ${Colors.background};
     font-size: 3em;
@@ -80,19 +76,8 @@ export default `
     border-bottom: 2px solid ${Colors.background}
   }
   hr {
-    border: none;
     display: block;
-    margin: 2em 0 1em;
-    font-size: .9rem;
-    :before {
-      display: block;
-      content: '';
-      width: 3px;
-      height: 3px;
-      margin: 2em 2em 2em;
-      border-radius: 50%;
-      background: black;
-      box-shadow: calc(3px*8) 0 0 0 black, calc(3px*-8) 0 0 0 black;
-    }
+    margin: 1em 9em 1em;
+    font-size: 1rem;
   }
-`
+`;

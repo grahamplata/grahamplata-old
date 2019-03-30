@@ -1,17 +1,10 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Base = styled.div`
   h2 {
-    font-size: 1.99rem;
     margin-top: 2em;
   }
-  h3 {
-    font-weight: 600;
-    font-size: 1.324rem !important;
-    margin-top: 0.1em;
-    text-size-adjust: 100%;
-  }
-`
+`;
 
 export const BlogContainer = styled(Base)`
   p {
@@ -25,4 +18,14 @@ export const BlogContainer = styled(Base)`
   li {
     list-style-type: none;
   }
-`
+`;
+
+export const BlogHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  small {
+    margin-top: 2rem;
+  }
+`;

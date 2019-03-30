@@ -1,11 +1,10 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import Layout from '../components/layout'
-import Seo from '../components/Seo'
-import { PageContainer } from '../theme/containers/PageContainer'
-
-import { skills, places } from '../../content/aboutme/aboutme'
+import Layout from "../components/layout";
+import Seo from "../components/Seo";
+import { PageContainer } from "../theme/containers/PageContainer";
+import { skills, places } from "../../content/aboutme/aboutme";
 
 const About = () => (
   <StaticQuery
@@ -22,14 +21,14 @@ const About = () => (
     `}
     render={data => (
       <Layout>
-        <Seo title="About" keywords={['blog', 'about', 'grahamplata']} />
+        <Seo title="About" keywords={["blog", "about", "grahamplata"]} />
         <PageContainer>
           <h2>About</h2>
           <div>
             <h3>Where are you currently?</h3>
             <p>
               Currently, I reside in Phoenixville, Pennsylvania working as a
-              Data Support Engineer for{' '}
+              Data Support Engineer for{" "}
               <a style={styles.syapse} href="https://www.syapse.com/">
                 Syapse
               </a>
@@ -43,7 +42,7 @@ const About = () => (
                   <li>
                     <b>{skill.skill}</b> - {skill.description}
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
@@ -55,7 +54,7 @@ const About = () => (
                   <li>
                     <b>{place.place}</b> - {place.description}
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
@@ -63,14 +62,14 @@ const About = () => (
       </Layout>
     )}
   />
-)
+);
 
 const styles = {
   syapse: {
-    color: '#21C2D2',
+    color: "#21C2D2",
     fontWeight: 700,
-    textTransform: 'uppercase',
-  },
-}
+    textTransform: "uppercase"
+  }
+};
 
-export default About
+export default About;

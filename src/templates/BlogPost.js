@@ -1,14 +1,17 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Seo from '../components/Seo'
-import Layout from '../components/layout'
-import { BlogContainer } from '../theme/containers/BlogPostsContaners'
-import { PageContainer } from '../theme/containers/PageContainer'
+import React from "react";
+import { graphql } from "gatsby";
+import Seo from "../components/Seo";
+import Layout from "../components/layout";
+import {
+  BlogHeader,
+  BlogContainer
+} from "../theme/containers/BlogPostsContaners";
+import { PageContainer } from "../theme/containers/PageContainer";
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
-  const { frontmatter, html } = post
-  const { title, date, path } = frontmatter
+  const { markdownRemark: post } = data;
+  const { frontmatter, html } = post;
+  const { title, date, path } = frontmatter;
   return (
     <Layout>
       <Seo
@@ -18,18 +21,18 @@ const BlogPost = ({ data }) => {
             .charAt(0)
             .toUpperCase() + path.slice(2)
         }
-        keywords={['blog', 'grahamplata']}
+        keywords={["blog", "grahamplata"]}
       />
       <PageContainer>
-        <>
+        <BlogHeader>
           <h2>{title}</h2>
           <small>{date}</small>
-        </>
+        </BlogHeader>
         <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
       </PageContainer>
     </Layout>
-  )
-}
+  );
+};
 
 export const postQuery = graphql`
   query($path: String!) {
@@ -45,6 +48,6 @@ export const postQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default BlogPost
+export default BlogPost;

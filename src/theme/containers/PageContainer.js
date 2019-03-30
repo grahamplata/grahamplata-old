@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const PageContainer = styled.div`
   p {
@@ -13,7 +13,4 @@ export const PageContainer = styled.div`
   li {
     list-style-type: none;
   }
-  img {
-    padding-bottom: 20px;
-  }
-`
+`;
