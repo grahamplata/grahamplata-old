@@ -13,4 +13,6 @@ tags: ["post", "prometheus", "monitoring"]
 
 ## My Objectives
 
-- Learn something!
+- Learn something! ~ Exercising my brain on something new!
+- Get a better grasp of monitoring in a containerized world.
+- Create and extendable playground to practice on.
