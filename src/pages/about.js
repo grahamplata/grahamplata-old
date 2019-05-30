@@ -28,7 +28,7 @@ const About = () => (
             <h3>Where are you currently?</h3>
             <p>
               Currently, I reside in Phoenixville, Pennsylvania working as a
-              Data Support Engineer for{" "}
+              Site Reliability Engineer for{" "}
               <a style={styles.syapse} href="https://www.syapse.com/">
                 Syapse
               </a>
