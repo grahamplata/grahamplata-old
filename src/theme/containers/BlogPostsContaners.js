@@ -10,7 +10,6 @@ export const BlogContainer = styled(Base)`
   p {
     cursor: default;
     text-size-adjust: 100%;
-    padding-bottom: 0.1em;
   }
   ul {
     margin-left: 20px;
