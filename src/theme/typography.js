@@ -20,13 +20,13 @@ export default `
     font-weight: 600;
     text-rendering: optimizeLegibility;
     margin-top: 2.8em;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.5em;
     @media screen and (max-width: 700px) {
       // text-align: center;
     }
   }
   h4 {
-    margin-top: 2.2em;
+    margin-top: 1.2em;
     font-size: .966em;
   }
   h5 {
@@ -38,7 +38,7 @@ export default `
   p,
   .message {
     color: ${Colors.p};
-    margin: 0 auto 1.2em;
+    margin: 0 auto 1.1em;
     line-height: 1.5;
     letter-spacing: normal;
   }
