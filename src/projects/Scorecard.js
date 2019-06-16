@@ -17,10 +17,10 @@ const Scorecard = props => (
     `}
     render={data => (
       <>
-        <a href="http://acid-scene.surge.sh/">
+        <a href="http://absurd-rain.surge.sh/">
           <Img
             fluid={data.dotaTwo.childImageSharp.fluid}
-            href="http://acid-scene.surge.sh/"
+            href="http://absurd-rain.surge.sh/"
           />
         </a>
         <div style={{ paddingTop: "5px" }}>
@@ -33,7 +33,7 @@ const Scorecard = props => (
         <h3>
           <a
             style={{ color: "rgba(0, 0, 0, 0.87)" }}
-            href="http://acid-scene.surge.sh/"
+            href="http://absurd-rain.surge.sh/"
           >
             Dota 2 Score Card
           </a>
