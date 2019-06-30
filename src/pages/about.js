@@ -26,13 +26,15 @@ const About = () => (
           <h2>About</h2>
           <div>
             <h3>Where are you currently?</h3>
-            <p>
-              Currently, I reside in Phoenixville, Pennsylvania working as a
-              Site Reliability Engineer for{" "}
-              <a style={styles.syapse} href="https://www.syapse.com/">
-                Syapse
-              </a>
-            </p>
+            <ul>
+              <li>
+                Currently, I reside in Phoenixville, Pennsylvania working as a
+                Site Reliability Engineer for{" "}
+                <a style={styles.syapse} href="https://www.syapse.com/">
+                  Syapse
+                </a>
+              </li>
+            </ul>
           </div>
           <div>
             <h3>What skills would you like to learn in 2019?</h3>
