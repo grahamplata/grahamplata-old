@@ -3,7 +3,7 @@ path: "/that-cat-shirt"
 title: "🐱 That Cat Shirt Dot Com"
 date: "2019-06-28"
 author: grahamplata
-excert: "A guide to monetized your cat for fun and profit"
+excert: "Monetized your cat for fun and profit"
 tags: ["post", "nyx", "cat", "sellout"]
 ---
 

@@ -1,13 +1,17 @@
 export const skills = [
   {
+    skill: "Kubernetes",
+    description:
+      "Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management."
+  },
+  {
     skill: "Welding",
     description: "I want to restore and work on cars eventually."
   },
   {
     skill: "Spirited Driving",
     description: "I want to learn to Drift or Autocross."
-  },
-  { skill: "Go", description: 'fmt.Println("Hello, Go")' }
+  }
 ];
 
 export const places = [
