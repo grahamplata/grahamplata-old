@@ -8,19 +8,12 @@ const BlogItem = props => (
     <div>
       <Link to={props.path}>
         <b>{props.title}</b>
-      </Link>
-      <small> -- {props.excert}</small>
+      </Link>{" "}
+      <small>-- {props.date}</small>
     </div>
-    <>
-      <small>{props.date}</small>
-      <small>
-        {" [ "}
-        {props.tags.map(tag => {
-          return tag.charAt(0).toUpperCase() + tag.slice(1) + " ";
-        })}
-        {"]"}
-      </small>
-    </>
+    <div>
+      <small>{props.excert}</small>
+    </div>
   </BlogListItem>
 );
 
