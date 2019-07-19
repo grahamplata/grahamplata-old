@@ -28,11 +28,12 @@ const About = () => (
             <h3>Where are you currently?</h3>
             <ul>
               <li>
-                Currently, I reside in Phoenixville, Pennsylvania working as a
-                Clinical Data Analyst & Engineer for{" "}
+                Currently, I reside in Phoenixville, Pennsylvania solving
+                interesting problems as a Clinical Data Analyst & Engineer for{" "}
                 <a style={styles.syapse} href="https://www.syapse.com/">
                   Syapse
                 </a>
+                .
               </li>
             </ul>
           </div>
