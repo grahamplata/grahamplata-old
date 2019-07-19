@@ -29,7 +29,7 @@ const About = () => (
             <ul>
               <li>
                 Currently, I reside in Phoenixville, Pennsylvania working as a
-                Site Reliability Engineer for{" "}
+                Clinical Data Analyst & Engineer for{" "}
                 <a style={styles.syapse} href="https://www.syapse.com/">
                   Syapse
                 </a>
