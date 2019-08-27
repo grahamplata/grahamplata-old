@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { Colors, Fonts } from '../variables'
-import media from '../../utils/media'
+import styled from "styled-components";
+import { Colors, Fonts } from "../variables";
+import media from "../../utils/media";
 
 export default styled.main`
   > *:first-child {
@@ -57,22 +57,19 @@ export default styled.main`
     }
   }
   blockquote {
-    margin-top: 4em;
+    margin-top: 1em;
     font-size: 90%;
-    padding: 1.5em 1em 1.5em 0.5em;
     margin-bottom: 0;
     font-size: 1em;
-    border-top: 2px solid ${Colors.border};
-    border-bottom: 2px solid ${Colors.border};
     position: relative;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
     p {
+      color: ${Colors.p};
       margin-bottom: 0;
     }
     cite {
       float: right;
       font-weight: 400;
-      padding: 0.3em;
     }
   }
   blockquote + p {
@@ -89,4 +86,4 @@ export default styled.main`
     font-family: ${Fonts.basic};
     font-family: ${Fonts.code};
   }
-`
+`;

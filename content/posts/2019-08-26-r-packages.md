@@ -18,11 +18,11 @@ tags: ["git", "R"]
 
 ### Private Repository prerequisites
 
-> If you wish to install from a private repo you need a token from your [GitHub Settings](https://github.com/settings/tokens/). Otherwise feel free to skip this section.
+Note: If you wish to install from a private repo you need a token from your [GitHub Settings](https://github.com/settings/tokens/). Otherwise feel free to skip this section.
 
 Set a `GITHUB_PAT` environement variable
 
-> Don't commit your tokens!
+Note: Don't commit your tokens!
 
 ```R
 Sys.setenv(GITHUB_PAT="PUT_YOUR_TOKEN_HERE")
@@ -34,7 +34,7 @@ or in your `.Renviron`
 GITHUB_PAT=PUT_YOUR_TOKEN_HERE
 ```
 
-> You will need to sign-in and start a new R session for the environment variable (accessed by Sys.getenv) to be visible.
+Note: You will need to sign-in and start a new R session for the environment variable (accessed by Sys.getenv) to be visible.
 
 ### Required libraries
 
@@ -61,7 +61,7 @@ Our Final Command should look like this
 install_github(repo="username/package", auth_token=Sys.getenv("GITHUB_PAT"))
 ```
 
-> Note: There are handlers for all flavors of version control.
+Note: There are handlers for all flavors of version control.
 
 ```R
 install_github() from GitHub
