@@ -36,8 +36,6 @@ GITHUB_PAT=PUT_YOUR_TOKEN_HERE
 
 > You will need to sign-in and start a new R session for the environment variable (accessed by Sys.getenv) to be visible.
 
----
-
 ### Required libraries
 
 Baked into the R devtools package there lives a function to install R packages hosted on GitHub.
@@ -80,8 +78,6 @@ install_version() from a specific version on CRAN
 `update_packages()` updates a package to the latest version.
 This works both on packages installed from CRAN as well as those installed from any of the functions listed above.
 
----
-
 ## Development
 
 Add `ref` parameter to the function with the specific branch name in which you want to develop.
@@ -91,8 +87,6 @@ This can be a branch, tag, or commit.
 install_github(repo="username/package", ref="develop", auth_token=Sys.getenv("GITHUB_PAT"))
 ```
 
----
-
 ## Distributing a package build privately
 
 - RStudio Shared Directory: Save the R package source code in a `/shared-folder/`.
@@ -100,8 +94,6 @@ install_github(repo="username/package", ref="develop", auth_token=Sys.getenv("GI
 
   - Option 1: `Tools > Install Packages > Select Build from picklist`
   - Option 2: `use the install.packages('<path>') function from the command line.`
-
----
 
 ### Resources
 
