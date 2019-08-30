@@ -61,4 +61,9 @@ export default `
     padding-bottom: 1em;
     padding-right: 1em;
   }
+  :not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: 0;
+    white-space: normal;
+}
 `;
