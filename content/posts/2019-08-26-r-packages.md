@@ -7,8 +7,6 @@ excert: "Installing R Packages from GitHub"
 tags: ["git", "R"]
 ---
 
-## Installing R Packages Hosted on GitHub
-
 ## Prerequisities
 
 - R Studio
