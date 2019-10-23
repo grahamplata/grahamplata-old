@@ -1,11 +1,13 @@
 ---
 path: "/watchlist"
-title: "🎥 Watch queue"
+title: "🎥 A curated list of things I was told I should watch."
 date: "2019-10-22"
 author: grahamplata
 excert: "Watch queue"
 tags: ["movies", "tv"]
 ---
+
+A curated list of things I was told I should watch.
 
 ## Table of Contents
 
@@ -17,4 +19,5 @@ Created and directed by Hideaki Anno, Neon Genesis Evangelion (新世紀エヴ�
 
 After starting out as a typical mechanical-robot (“mecha”) anime, Evangelion gradually evolved into an existentialist deconstruction of its own genre, immediately winning critical acclaim. Its sustained popularity through the years spawned a plethora of spinoff mangas, novel adaptations, games, advertisement tie-ins, and even pachinko gambling machines, leading it to permeate Japanese culture and eventually become a worldwide sensation. Many of its visual motifs became cultural lexicons, including its identity typeface: Matisse EB.
 
+> Inspired to watch because of an article on [Fonts in Use](https://fontsinuse.com/uses/28760/neon-genesis-evangelion) by Peiran Tan on Oct 17th, 2019.
 > Watching via [Netflix](https://www.netflix.com/title/81033445/)
