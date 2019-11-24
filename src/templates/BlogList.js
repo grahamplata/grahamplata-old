@@ -1,10 +1,9 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import Layout from '../components/layout';
-import BlogItem from '../components/BlogItem';
-import Seo from '../components/Seo';
-import { PageContainer } from '../theme/containers/PageContainer';
+import Layout from "../components/Layout";
+import BlogItem from "../components/BlogItem";
+import Seo from "../components/Seo";
 
 const BlogList = (props, { data }) => (
   <StaticQuery
@@ -35,8 +34,8 @@ const BlogList = (props, { data }) => (
     `}
     render={data => (
       <Layout>
-        <Seo title="Blog" keywords={['blog', 'grahamplata']} />
-        <PageContainer>
+        <Seo title="Blog" keywords={["blog", "grahamplata"]} />
+        <>
           <h2>Blog</h2>
           {data.allMarkdownRemark.edges.map(({ node }) => {
             const { title, tags, date, path, excert } = node.frontmatter;
@@ -51,7 +50,7 @@ const BlogList = (props, { data }) => (
               />
             );
           })}
-        </PageContainer>
+        </>
       </Layout>
     )}
   />

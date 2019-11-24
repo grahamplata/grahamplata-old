@@ -1,6 +1,5 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import FooterContainer from '../theme/containers/FooterContainer';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 const footerQuery = graphql`
   query {
@@ -20,7 +19,7 @@ export default () => (
   <StaticQuery
     query={footerQuery}
     render={data => (
-      <FooterContainer>
+      <>
         <ul>
           {Object.entries(data.site.siteMetadata).map(([name, link]) => (
             <li key={name}>
@@ -30,7 +29,7 @@ export default () => (
             </li>
           ))}
         </ul>
-      </FooterContainer>
+      </>
     )}
   />
 );

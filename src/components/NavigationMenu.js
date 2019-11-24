@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import NavContainer from '../theme/containers/NavContainer';
+import React from "react";
+import { Link } from "gatsby";
 
-const PATHS = ['/', '/blog/', '/about/'];
+const PATHS = ["/", "/blog/"];
 const getLinkName = locationSlug =>
-  locationSlug.length === 1 ? 'Graham Plata' : locationSlug.split('/')[1];
+  locationSlug.length === 1 ? "Home" : locationSlug.split("/")[1];
 
 const Li = ({ location }) => (
   <li>
@@ -13,11 +12,11 @@ const Li = ({ location }) => (
 );
 
 export default () => (
-  <NavContainer>
+  <>
     <ul>
       {PATHS.map((path, i) => (
         <Li key={i} location={path} />
       ))}
     </ul>
-  </NavContainer>
+  </>
 );

@@ -1,12 +1,7 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Seo from '../components/Seo';
-import Layout from '../components/layout';
-import {
-  BlogHeader,
-  BlogContainer
-} from '../theme/containers/BlogPostsContaners';
-import { PageContainer } from '../theme/containers/PageContainer';
+import React from "react";
+import { graphql } from "gatsby";
+import Seo from "../components/Seo";
+import Layout from "../components/Layout";
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -21,15 +16,15 @@ const BlogPost = ({ data }) => {
             .charAt(0)
             .toUpperCase() + path.slice(2)
         }
-        keywords={['blog', 'grahamplata']}
+        keywords={["blog", "grahamplata"]}
       />
-      <PageContainer>
-        <BlogHeader>
+      <>
+        <>
           <h2>{title}</h2>
           <small>{date}</small>
-        </BlogHeader>
+        </>
         <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
-      </PageContainer>
+      </>
     </Layout>
   );
 };
