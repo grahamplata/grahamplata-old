@@ -23,7 +23,7 @@ const BlogPost = ({ data }) => {
           <h2>{title}</h2>
           <small>{date}</small>
         </>
-        <BlogContainer dangerouslySetInnerHTML={{ __html: html }} />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </>
     </Layout>
   );
