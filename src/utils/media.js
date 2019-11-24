@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 
 const sizes = {
   monitor: 1600,
@@ -6,8 +6,8 @@ const sizes = {
   tablet: 700,
   phone: 425,
   tiny: 340,
-  none: 320,
-}
+  none: 320
+};
 
 // Iterate through the sizes and create a media template
 export default Object.keys(sizes).reduce((acc, label) => {
@@ -15,6 +15,6 @@ export default Object.keys(sizes).reduce((acc, label) => {
     @media (max-width: ${sizes[label]}px) {
       ${css(...args)};
     }
-  `
-  return acc
-}, {})
+  `;
+  return acc;
+}, {});

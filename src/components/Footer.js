@@ -1,6 +1,6 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import FooterContainer from '../theme/containers/FooterContainer'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import FooterContainer from '../theme/containers/FooterContainer';
 
 const footerQuery = graphql`
   query {
@@ -14,7 +14,7 @@ const footerQuery = graphql`
       }
     }
   }
-`
+`;
 
 export default () => (
   <StaticQuery
@@ -33,4 +33,4 @@ export default () => (
       </FooterContainer>
     )}
   />
-)
+);

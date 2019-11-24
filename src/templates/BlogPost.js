@@ -1,12 +1,12 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Seo from "../components/Seo";
-import Layout from "../components/layout";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Seo from '../components/Seo';
+import Layout from '../components/layout';
 import {
   BlogHeader,
   BlogContainer
-} from "../theme/containers/BlogPostsContaners";
-import { PageContainer } from "../theme/containers/PageContainer";
+} from '../theme/containers/BlogPostsContaners';
+import { PageContainer } from '../theme/containers/PageContainer';
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -21,7 +21,7 @@ const BlogPost = ({ data }) => {
             .charAt(0)
             .toUpperCase() + path.slice(2)
         }
-        keywords={["blog", "grahamplata"]}
+        keywords={['blog', 'grahamplata']}
       />
       <PageContainer>
         <BlogHeader>

@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import { Link } from 'gatsby';
 
-import BlogListItem from "../theme/containers/BlogItem";
+import BlogListItem from '../theme/containers/BlogItem';
 
 const BlogItem = props => (
   <BlogListItem>
     <div>
       <Link to={props.path}>
         <b>{props.title}</b>
-      </Link>{" "}
+      </Link>{' '}
       <small>-- {props.date}</small>
     </div>
     <div>

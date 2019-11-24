@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const BlogListItem = styled.div`
   div {
-    margin-top: 12px;
+    margin-top: 3px;
   }
   ul > li {
     display: inline-block;

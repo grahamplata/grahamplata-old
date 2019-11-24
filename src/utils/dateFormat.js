@@ -10,11 +10,11 @@ const MON = [
   'Sep',
   'Oct',
   'Nov',
-  'Dec',
-]
+  'Dec'
+];
 
 export default dt =>
   `${MON[new Date(dt).getMonth()]} ${new Date(dt)
     .getDate()
     .toString()
-    .padStart(2, '0')}`
+    .padStart(2, '0')}`;

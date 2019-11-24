@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import { Colors, Fonts } from "../variables";
-import media from "../../utils/media";
+import styled from 'styled-components';
+import { Colors, Fonts } from '../variables';
+import media from '../../utils/media';
 
 export default styled.main`
   > *:first-child {
     margin-top: 0;
   }
-  // lists
   ul,
   ol {
     font-size: 1em;
@@ -18,7 +17,6 @@ export default styled.main`
       line-height: 1.6;
     }
     li::before {
-      // content: '•';
       opacity: 1;
       margin-right: 0.5em;
       margin-left: -0.55em;
@@ -49,7 +47,6 @@ export default styled.main`
     }
   }
   p {
-    opacity: 0.99999;
     code {
       padding-left: 0.2em;
       border: 1px solid ${Colors.code};

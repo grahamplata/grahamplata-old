@@ -1,11 +1,10 @@
-import styled from 'styled-components'
-import { Colors } from '../variables'
+import styled from 'styled-components';
+import { Colors } from '../variables';
 
 export default styled.div`
   display: block;
-  font-size: 0.9em;
   font-weight: 600;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-top: 15px;
   ul {
@@ -21,7 +20,6 @@ export default styled.div`
       float: right;
       display: block;
       vertical-align: middle;
-      line-height: 1;
       list-style: none;
       padding: 0.7em;
       margin: 0em;
@@ -36,11 +34,7 @@ export default styled.div`
         :focus {
           filter: invert(70%);
         }
-        &.${props => props.activeClassName} {
-        }
-        &.home {
-        }
       }
     }
   }
-`
+`;
