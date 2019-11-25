@@ -20,6 +20,7 @@ export default () => (
     query={footerQuery}
     render={data => (
       <>
+        <p>© 2019 Graham Plata. All rights reserved.</p>
         <ul>
           {Object.entries(data.site.siteMetadata).map(([name, link]) => (
             <li key={name}>
