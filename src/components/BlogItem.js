@@ -4,11 +4,12 @@ import { Link } from "gatsby";
 const BlogItem = props => (
   <>
     <div>
-      {props.date}{" "}
-      <Link to={props.path}>
-        <b>{props.title}</b>
-      </Link>{" "}
-      {props.excert}
+      <div>
+        <Link to={props.path}>
+          <b>{props.title}</b>
+        </Link>
+      </div>
+      {props.date} -- {props.excert}
     </div>
   </>
 );
