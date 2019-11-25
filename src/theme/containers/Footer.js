@@ -10,10 +10,17 @@ export default styled.footer`
         display: inline-block;
         padding: 1em;
         a {
-            position: relative;
-            li::after {
-                content: ' \\ ';
-        }
+            text-transform: capitalize;
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            transition: opacity 0.5s ease-in;
+            :hover,
+            :active,
+            :focus {
+              filter: invert(70%);
+            }
+          }
     }
   }
 `;

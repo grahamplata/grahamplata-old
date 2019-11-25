@@ -11,6 +11,7 @@ export default styled.header`
   }
   a {
     text-transform: capitalize;
+    color: #ddd;
     text-decoration: none;
     display: block;
     transition: opacity 0.5s ease-in;
